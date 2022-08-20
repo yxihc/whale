@@ -11,7 +11,6 @@
   "scripts": {
     "demo": "pnpm run  -C demo dev",
     "demo:build:prod": "pnpm -C demo build:prod",
-
     "play": "pnpm run  -C play dev",
     "docs:dev": "pnpm run  -C docs docs:dev",
     "docs:build": "pnpm run  -C docs docs:build",
@@ -26,7 +25,9 @@
     "eslint": "^8.22.0",
     "eslint-define-config": "^1.5.1",
     "vite-plugin-eslint": "^1.8.1",
-    "@whale/eslint-config": "workspace:*"
+    "@whale/eslint-config": "workspace:*",
+    "vite": "^3.0.7",
+    "vue": "^3.2.37"
   },
   "dependencies": {},
   "engines": {

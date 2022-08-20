@@ -1,1 +1,0 @@
-import{_ as e,o as n,c as o}from"./index.ebb5c0db.js";const t={name:"index"};function c(r,s,a,_,p,d){return n(),o("div",null," \u963F\u8428\u5FB7\u6492\u7684 ")}const f=e(t,[["render",c]]);export{f as default};

@@ -1,1 +1,0 @@
-import{_ as e,o as n,c as t}from"./index.ebb5c0db.js";const c={name:"Index",created(){}};function o(r,a,s,_,d,p){return n(),t("div",null,"\u8428\u8FBE")}const l=e(c,[["render",o]]);export{l as default};

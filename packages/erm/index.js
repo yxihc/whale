@@ -1,4 +1,3 @@
+import ErmFrom from './ErmFrom.vue'
 
-import ErmFrom from "./ErmFrom.vue";
 export default ErmFrom
-

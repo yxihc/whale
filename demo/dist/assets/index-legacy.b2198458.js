@@ -1,0 +1,1 @@
+System.register(["./index-legacy.2a8cea0c.js"],(function(e){"use strict";var n,t,r;return{setters:[e=>{n=e._,t=e.o,r=e.c}],execute:function(){e("default",n({name:"index"},[["render",function(e,n,c,u,i,s){return t(),r("div",null," 阿萨德撒的 ")}]]))}}}));

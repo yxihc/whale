@@ -1,0 +1,1 @@
+System.register(["./index-legacy.2a8cea0c.js"],(function(e){"use strict";var t,n,c;return{setters:[e=>{t=e._,n=e.o,c=e.c}],execute:function(){const r={class:"login"};e("default",t({},[["render",function(e,t){return n(),c("div",r," dengl ")}]]))}}}));

@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "docs:dev": "vitepress dev .",
+    "docs:build": "vitepress build .",
+    "docs:serve": "vitepress serve ."
+  },
+  "type": "module",
+  "dependencies": {
+    "vitepress": "^1.0.0-alpha.8",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "vite": "^2.9.13",
+    "vite-plugin-inspect": "^0.5.0",
+    "vite-plugin-mkcert": "^1.7.2",
+    "vite-plugin-pwa": "^0.12.0",
+    "vitepress": "^0.22.4"
+  }
+}

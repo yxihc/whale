@@ -1,0 +1,22 @@
+{
+  "name": "yxhcjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "demo": "pnpm run  -C demo dev",
+    "demo:build:prod": "pnpm -C demo build:prod",
+    "docs:dev": "pnpm run  -C docs docs:dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}

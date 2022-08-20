@@ -1,0 +1,10 @@
+{
+  "name": "@yxhcjs/erm",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "module": "index.js",
+  "peerDependencies": {
+    "vue": "^3.2.13"
+  }
+}

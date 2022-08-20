@@ -1,0 +1,1 @@
+System.register(["./index-legacy.2a8cea0c.js"],(function(e){"use strict";var t,n,r;return{setters:[e=>{t=e._,n=e.o,r=e.c}],execute:function(){e("default",t({name:"Index",created(){}},[["render",function(e,t,c,u,a,i){return n(),r("div",null,"萨达")}]]))}}}));

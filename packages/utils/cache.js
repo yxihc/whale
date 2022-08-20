@@ -65,6 +65,8 @@ const localCache = {
   }
 }
 
+const aa =''
+
 export default {
   /**
    * 会话级缓存

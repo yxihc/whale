@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "workspaces": [
+    "packages/*",
+    "play",
+    "docs"
+  ],
   "scripts": {
     "demo": "pnpm run  -C demo dev",
     "demo:build:prod": "pnpm -C demo build:prod",
+
+    "play": "pnpm run  -C play dev",
     "docs:dev": "pnpm run  -C docs docs:dev",
     "docs:build": "pnpm run  -C docs docs:build",
     "docs:serve": "pnpm run  -C docs docs:serve",
@@ -15,10 +22,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-define-config": "^1.5.1",
+    "vite-plugin-eslint": "^1.8.1",
+    "@whale/eslint-config": "workspace:*"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">= 16"
 
   },
-  "devDependencies": {
-
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,md,json}": "eslint --fix"
   }
 }

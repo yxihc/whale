@@ -1,12 +1,12 @@
 ---
 layout: home
 
-title: yxhc
-titleTemplate: 一个组件库
+title: Whale
+titleTemplate: 一个快速开发的组件库
 
 hero:
   name: yxhc
-  text: 一个快速的开发框架
+  text: 一个快速开发的组件库
   tagline: 未开发提供极速响应
   image:
     src: /logo-with-shadow.png
@@ -20,7 +20,7 @@ hero:
       link: /guide/why
     - theme: alt
       text: View on GitHub
-      link: https://github.com/vitejs/vite
+      link: https://github.com/yxihc/whale
 
 features:
   - icon: 💡

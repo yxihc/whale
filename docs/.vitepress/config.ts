@@ -2,7 +2,7 @@ import { defineConfig, DefaultTheme } from 'vitepress'
 
 const ogDescription = 'Next Generation Frontend Tooling'
 const ogImage = 'https://vitejs.dev/og-image.png'
-const ogTitle = 'Vite'
+const ogTitle = 'Whale'
 const ogUrl = 'https://vitejs.dev'
 
 // netlify envs
@@ -54,17 +54,15 @@ const versionLinks = ((): DefaultTheme.NavItemWithLink[] => {
 })()
 
 export default defineConfig({
-  title: `yxhc${additionalTitle}`,
+  title: `${ogTitle}${additionalTitle}`,
   description: '一个快速的开发框架',
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.png' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: ogTitle }],
     ['meta', { property: 'og:image', content: ogImage }],
     ['meta', { property: 'og:url', content: ogUrl }],
     ['meta', { property: 'og:description', content: ogDescription }],
-    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:site', content: '@vite_js' }],
     ['meta', { name: 'theme-color', content: '#646cff' }]
   ],
 
@@ -73,16 +71,16 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/logo.png',
     editLink: {
-      pattern: 'https://github.com/vitejs/vite/edit/main/docs/:path',
+      pattern: 'https://github.com/yxihc/whale/main/docs/:path',
       text: '在 Github 上编辑此页'
     },
 
     socialLinks: [
       // { icon: 'twitter', link: 'https://twitter.com/vite_js' },
       { icon: 'discord', link: 'https://chat.vitejs.dev' },
-      { icon: 'github', link: 'https://github.com/vitejs/vite' }
+      { icon: 'github', link: 'https://github.com/yxihc/whale' }
     ],
     lastUpdatedText:'最后更新时间',
     localeLinks: {

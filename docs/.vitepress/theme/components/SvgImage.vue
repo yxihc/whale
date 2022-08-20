@@ -1,9 +1,10 @@
 <script setup lang="ts">
-defineProps<{ svg: string }>()
+// defineProps<{ svg: string }>()
 </script>
 
 <template>
-  <figure class="svg-image-root" v-html="svg" />
+  <div>dasdsa</div>
+<!--  <figure class="svg-image-root" v-html="svg" />-->
 </template>
 
 <style>

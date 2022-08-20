@@ -1,4 +1,4 @@
-import { defineConfig, DefaultTheme } from 'vitepress'
+import { defineConfig,DefaultTheme} from 'vitepress'
 
 const ogDescription = 'Next Generation Frontend Tooling'
 const ogImage = 'https://vitejs.dev/og-image.png'
@@ -6,55 +6,10 @@ const ogTitle = 'Whale'
 const ogUrl = 'https://vitejs.dev'
 
 // netlify envs
-const deployURL = process.env.DEPLOY_PRIME_URL || ''
 const commitRef = process.env.COMMIT_REF?.slice(0, 8) || 'dev'
 
-const deployType = (() => {
-  switch (deployURL) {
-    case 'https://main--vite-docs-main.netlify.app':
-      return 'main'
-    case '':
-      return 'local'
-    default:
-      return 'release'
-  }
-})()
-const additionalTitle = ((): string => {
-  switch (deployType) {
-    case 'main':
-      return ' (main branch)'
-    case 'local':
-      return ' (local)'
-    case 'release':
-      return ''
-  }
-})()
-const versionLinks = ((): DefaultTheme.NavItemWithLink[] => {
-  switch (deployType) {
-    case 'main':
-    case 'local':
-      return [
-        {
-          text: 'Vite 3 Docs (release)',
-          link: 'https://vitejs.dev'
-        },
-        {
-          text: 'Vite 2 Docs',
-          link: 'https://v2.vitejs.dev'
-        }
-      ]
-    case 'release':
-      return [
-        {
-          text: 'Vite 2 Docs',
-          link: 'https://v2.vitejs.dev'
-        }
-      ]
-  }
-})()
-
 export default defineConfig({
-  title: `${ogTitle}${additionalTitle}`,
+  title: `${ogTitle}`,
   description: '一个快速的开发框架',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.png' }],
@@ -65,18 +20,15 @@ export default defineConfig({
     ['meta', { property: 'og:description', content: ogDescription }],
     ['meta', { name: 'theme-color', content: '#646cff' }]
   ],
-
   vue: {
     reactivityTransform: true
   },
-
   themeConfig: {
     logo: '/logo.png',
     editLink: {
       pattern: 'https://github.com/yxihc/whale/main/docs/:path',
       text: '在 Github 上编辑此页'
     },
-
     socialLinks: [
       // { icon: 'twitter', link: 'https://twitter.com/vite_js' },
       { icon: 'discord', link: 'https://chat.vitejs.dev' },
@@ -134,7 +86,9 @@ export default defineConfig({
       },
       {
         text: 'Version',
-        items: versionLinks
+        items: [
+          {text:'1.0',link:'/team'}
+        ]
       }
     ],
 

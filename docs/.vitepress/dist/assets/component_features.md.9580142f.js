@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,a as o}from"./app.fa84d236.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"component/features.md"}'),s={name:"component/features.md"},n=o("p",null,"\u827E\u65AF\u5FB7",-1),r=[n];function c(_,p,d,i,f,l){return a(),t("div",null,r)}const h=e(s,[["render",c]]);export{u as __pageData,h as default};

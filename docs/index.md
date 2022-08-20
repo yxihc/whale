@@ -5,7 +5,7 @@ title: Whale
 titleTemplate: 一个快速开发的组件库
 
 hero:
-  name: yxhc
+  name: Whale
   text: 一个快速开发的组件库
   tagline: 未开发提供极速响应
   image:

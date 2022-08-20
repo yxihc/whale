@@ -1,9 +1,7 @@
 import { h } from 'vue'
 import Theme from 'vitepress/theme'
 import './styles/vars.css'
-// import HomeSponsors from './components/HomeSponsors.vue'
-// import AsideSponsors from './components/AsideSponsors.vue'
-import SvgImage from './components/SvgImage.vue'
+import WhaleTeam from './components/WhaleTeam.vue'
 
 export default {
   ...Theme,
@@ -14,6 +12,6 @@ export default {
     })
   },
   enhanceApp({ app }) {
-    app.component('SvgImage', SvgImage)
+    app.component('WhaleTeam', WhaleTeam)
   }
 }

@@ -1,11 +1,8 @@
 <script setup type="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-
-const aaa = () => {
-
-}
+// import WlErmForm  from "@whale/components/erm-form";
+import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
@@ -18,6 +15,8 @@ const aaa = () => {
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <wl-erm-form title="测试" />
+  <!--  <erm-form :title="c测试" />-->
 </template>
 
 <style scoped>
@@ -26,9 +25,11 @@ const aaa = () => {
   padding: 1.5em;
   will-change: filter;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }

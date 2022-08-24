@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a,a as o}from"./app.fa84d236.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guide/why.md"}'),s={name:"guide/why.md"},n=o("p",null,"\u827E\u65AF\u5FB7",-1),r=[n];function c(_,d,i,p,l,h){return a(),t("div",null,r)}const f=e(s,[["render",c]]);export{u as __pageData,f as default};

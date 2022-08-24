@@ -2,6 +2,9 @@
   "name": "whale",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
   "main": "index.js",
   "workspaces": [
     "packages/*",
@@ -15,24 +18,53 @@
     "docs:dev": "pnpm run  -C docs docs:dev",
     "docs:build": "pnpm run  -C docs docs:build",
     "docs:serve": "pnpm run  -C docs docs:serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pnpm run -C internal/build start",
+    "clean": "pnpm run clean:dist && pnpm run -r --parallel clean",
+    "clean:dist": "rimraf dist",
+    "build:vite": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stub": "pnpm run -r --parallel stub",
+    "postinstall": "pnpm stub",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 && pretty-quick --check --branch dev",
+    "lint:fix": "eslint --fix . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json && pretty-quick --branch dev",
+    "build:theme": "pnpm run -C packages/theme-chalk build"
   },
-  "type": "module",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^8.22.0",
-    "eslint-define-config": "^1.5.1",
-    "vite-plugin-eslint": "^1.8.1",
-    "@whale/eslint-config": "workspace:*",
-    "vite": "^3.0.7",
+  "dependencies": {
+    "@vue/shared": "^3.2.37",
+    "@whale/components": "workspace:*",
+    "@whale/locale": "workspace:*",
+    "@whale/theme-chalk": "workspace:*",
+    "@whale/utils": "workspace:*",
     "vue": "^3.2.37"
   },
-  "dependencies": {},
+  "devDependencies": {
+    "@esbuild-kit/cjs-loader": "^2.2.1",
+    "@pnpm/find-workspace-packages": "^4.0.16",
+    "@pnpm/types": "^8.4.0",
+    "@types/gulp": "^4.0.9",
+    "@types/node": "*",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "@vue/tsconfig": "^0.1.3",
+    "@whale/build": "workspace:0.0.1",
+    "@whale/build-constants": "workspace:*",
+    "@whale/build-utils": "workspace:0.0.1",
+    "@whale/eslint-config": "workspace:*",
+    "chalk": "^5.0.1",
+    "consola": "^2.15.3",
+    "eslint": "^8.22.0",
+    "eslint-define-config": "^1.5.1",
+    "gulp": "^4.0.2",
+    "npm": "^8.18.0",
+    "pretty-quick": "^3.1.3",
+    "rimraf": "^3.0.2",
+    "sass": "^1.53.0",
+    "unplugin-vue-define-options": "^0.6.1",
+    "vite": "^3.0.7",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-vue-setup-extend": "^0.4.0"
+  },
   "engines": {
     "node": ">= 16"
-
   },
   "lint-staged": {
     "*.{vue,js,ts,jsx,tsx,md,json}": "eslint --fix"

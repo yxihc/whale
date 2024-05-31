@@ -12,8 +12,8 @@
     "skipLibCheck": true,
     "lib": ["WebWorker"],
     "paths": {
-      "whale": ["../packages/whale-plus"],
-      "~/*": ["./.vitepress/vitepress/*"]
+      "whale": ["../packages/"],
+      "~/*": ["./.vitepress/utils*"]
     },
     "types": ["../typings/components"],
     "jsx": "preserve"

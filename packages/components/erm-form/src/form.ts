@@ -7,4 +7,4 @@ export const formProps = {
     default: '',
   },
 }
-export type formPropsType = ExtractPropTypes<typeof formProps>
+export type FormProps = ExtractPropTypes<typeof formProps>

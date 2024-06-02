@@ -5,11 +5,35 @@ import { h } from 'vue'
 import theme from 'vitepress/theme'
 import DefaultTheme from 'vitepress/theme'
 import NProgress from 'nprogress'
-import type { Theme } from 'vitepress'
 import 'nprogress/nprogress.css'
-import VPDemo from './../vitepress/components/vp-demo.vue'
 import ElementPlus from 'element-plus'
+import hljs from 'highlight.js'
+import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+import VPDemo from './../vitepress/components/vp-demo.vue'
 import 'element-plus/dist/index.css'
+import ReadTest from './../vitepress/components/ReadTest.vue'
+
+// 如果您正在使用CDN引入，请删除下面一行。
+import type { Theme } from 'vitepress'
+
+hljs.configure({
+  ignoreUnescapedHTML: true,
+  languages: [
+    'javascript',
+    'css',
+    'python',
+    'html',
+    'bash',
+    'java',
+    'sql',
+    'json',
+    'http',
+    'go',
+    'c++',
+    'c#',
+    '',
+  ],
+})
 
 export default <Theme>{
   // Layout() {
@@ -21,8 +45,12 @@ export default <Theme>{
     //   app.component(name, Comp)
     // })
     app.component('Demo', VPDemo)
+    app.component('ReadTest', ReadTest)
     app.use(NProgress)
     app.use(ElementPlus)
+    for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+      app.component(key, component)
+    }
     app.mixin({
       mounted() {
         NProgress.start()
@@ -30,6 +58,13 @@ export default <Theme>{
       updated() {
         NProgress.done()
       },
+    })
+
+    app.directive('highlight', (el) => {
+      const blocks = el.querySelectorAll('pre code')
+      blocks.forEach((block) => {
+        hljs.highlightBlock(block)
+      })
     })
   },
 }

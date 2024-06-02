@@ -16,6 +16,7 @@
     "demo:build:prod": "pnpm -C demo build:prod",
     "play": "pnpm run  -C play dev",
     "docs:dev": "pnpm run -C docs dev",
+    "docstt:dev": "pnpm run -C docstt dev",
     "docs:build": "pnpm run -C docs build",
     "docs:serve": "pnpm run -C docs serve",
     "build": "pnpm run -C internal/build start",

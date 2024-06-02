@@ -21,11 +21,25 @@ export default {
 ````
 
 
-:::demo
 
-button/test
+qwwqwqwq
+<script setup lang="ts">
+import HelloWorld from './examples/component/button/test.vue'
+</script>
+<templete>
+    <div>templete模板</div>
+    <HelloWorld></HelloWorld>
+</templete>
 
+11111
+::: info
+This is an info box.我去玩撒啊
 :::
+
+
+
+
+
 
 **Output**
 

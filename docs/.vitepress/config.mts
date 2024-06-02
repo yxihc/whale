@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'whale',
@@ -16,6 +15,7 @@ export default defineConfig({
       {
         text: 'Examples',
         items: [
+          { text:'测试', link: '/zn-CN/component/button' },
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' }
         ]

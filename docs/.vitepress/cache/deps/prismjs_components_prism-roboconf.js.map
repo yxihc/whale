@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-roboconf.js"],
-  "sourcesContent": ["Prism.languages.roboconf = {\n\t'comment': /#.*/,\n\t'keyword': {\n\t\t'pattern': /(^|\\s)(?:(?:external|import)\\b|(?:facet|instance of)(?=[ \\t]+[\\w-]+[ \\t]*\\{))/,\n\t\tlookbehind: true\n\t},\n\t'component': {\n\t\tpattern: /[\\w-]+(?=[ \\t]*\\{)/,\n\t\talias: 'variable'\n\t},\n\t'property': /[\\w.-]+(?=[ \\t]*:)/,\n\t'value': {\n\t\tpattern: /(=[ \\t]*(?![ \\t]))[^,;]+/,\n\t\tlookbehind: true,\n\t\talias: 'attr-value'\n\t},\n\t'optional': {\n\t\tpattern: /\\(optional\\)/,\n\t\talias: 'builtin'\n\t},\n\t'wildcard': {\n\t\tpattern: /(\\.)\\*/,\n\t\tlookbehind: true,\n\t\talias: 'operator'\n\t},\n\t'punctuation': /[{},.;:=]/\n};\n"],
-  "mappings": ";AAAA,MAAM,UAAU,WAAW;AAAA,EAC1B,WAAW;AAAA,EACX,WAAW;AAAA,IACV,WAAW;AAAA,IACX,YAAY;AAAA,EACb;AAAA,EACA,aAAa;AAAA,IACZ,SAAS;AAAA,IACT,OAAO;AAAA,EACR;AAAA,EACA,YAAY;AAAA,EACZ,SAAS;AAAA,IACR,SAAS;AAAA,IACT,YAAY;AAAA,IACZ,OAAO;AAAA,EACR;AAAA,EACA,YAAY;AAAA,IACX,SAAS;AAAA,IACT,OAAO;AAAA,EACR;AAAA,EACA,YAAY;AAAA,IACX,SAAS;AAAA,IACT,YAAY;AAAA,IACZ,OAAO;AAAA,EACR;AAAA,EACA,eAAe;AAChB;",
-  "names": []
-}

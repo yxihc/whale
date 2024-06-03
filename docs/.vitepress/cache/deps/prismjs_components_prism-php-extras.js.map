@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-php-extras.js"],
-  "sourcesContent": ["Prism.languages.insertBefore('php', 'variable', {\n\t'this': {\n\t\tpattern: /\\$this\\b/,\n\t\talias: 'keyword'\n\t},\n\t'global': /\\$(?:GLOBALS|HTTP_RAW_POST_DATA|_(?:COOKIE|ENV|FILES|GET|POST|REQUEST|SERVER|SESSION)|argc|argv|http_response_header|php_errormsg)\\b/,\n\t'scope': {\n\t\tpattern: /\\b[\\w\\\\]+::/,\n\t\tinside: {\n\t\t\t'keyword': /\\b(?:parent|self|static)\\b/,\n\t\t\t'punctuation': /::|\\\\/\n\t\t}\n\t}\n});\n"],
-  "mappings": ";AAAA,MAAM,UAAU,aAAa,OAAO,YAAY;AAAA,EAC/C,QAAQ;AAAA,IACP,SAAS;AAAA,IACT,OAAO;AAAA,EACR;AAAA,EACA,UAAU;AAAA,EACV,SAAS;AAAA,IACR,SAAS;AAAA,IACT,QAAQ;AAAA,MACP,WAAW;AAAA,MACX,eAAe;AAAA,IAChB;AAAA,EACD;AACD,CAAC;",
-  "names": []
-}

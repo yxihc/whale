@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-nasm.js"],
-  "sourcesContent": ["Prism.languages.nasm = {\n\t'comment': /;.*$/m,\n\t'string': /([\"'`])(?:\\\\.|(?!\\1)[^\\\\\\r\\n])*\\1/,\n\t'label': {\n\t\tpattern: /(^\\s*)[A-Za-z._?$][\\w.?$@~#]*:/m,\n\t\tlookbehind: true,\n\t\talias: 'function'\n\t},\n\t'keyword': [\n\t\t/\\[?BITS (?:16|32|64)\\]?/,\n\t\t{\n\t\t\tpattern: /(^\\s*)section\\s*[a-z.]+:?/im,\n\t\t\tlookbehind: true\n\t\t},\n\t\t/(?:extern|global)[^;\\r\\n]*/i,\n\t\t/(?:CPU|DEFAULT|FLOAT).*$/m\n\t],\n\t'register': {\n\t\tpattern: /\\b(?:st\\d|[xyz]mm\\d\\d?|[cdt]r\\d|r\\d\\d?[bwd]?|[er]?[abcd]x|[abcd][hl]|[er]?(?:bp|di|si|sp)|[cdefgs]s)\\b/i,\n\t\talias: 'variable'\n\t},\n\t'number': /(?:\\b|(?=\\$))(?:0[hx](?:\\.[\\da-f]+|[\\da-f]+(?:\\.[\\da-f]+)?)(?:p[+-]?\\d+)?|\\d[\\da-f]+[hx]|\\$\\d[\\da-f]*|0[oq][0-7]+|[0-7]+[oq]|0[by][01]+|[01]+[by]|0[dt]\\d+|(?:\\d+(?:\\.\\d+)?|\\.\\d+)(?:\\.?e[+-]?\\d+)?[dt]?)\\b/i,\n\t'operator': /[\\[\\]*+\\-\\/%<>=&|$!]/\n};\n"],
-  "mappings": ";AAAA,MAAM,UAAU,OAAO;AAAA,EACtB,WAAW;AAAA,EACX,UAAU;AAAA,EACV,SAAS;AAAA,IACR,SAAS;AAAA,IACT,YAAY;AAAA,IACZ,OAAO;AAAA,EACR;AAAA,EACA,WAAW;AAAA,IACV;AAAA,IACA;AAAA,MACC,SAAS;AAAA,MACT,YAAY;AAAA,IACb;AAAA,IACA;AAAA,IACA;AAAA,EACD;AAAA,EACA,YAAY;AAAA,IACX,SAAS;AAAA,IACT,OAAO;AAAA,EACR;AAAA,EACA,UAAU;AAAA,EACV,YAAY;AACb;",
-  "names": []
-}

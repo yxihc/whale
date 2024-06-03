@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-bbcode.js"],
-  "sourcesContent": ["Prism.languages.bbcode = {\n\t'tag': {\n\t\tpattern: /\\[\\/?[^\\s=\\]]+(?:\\s*=\\s*(?:\"[^\"]*\"|'[^']*'|[^\\s'\"\\]=]+))?(?:\\s+[^\\s=\\]]+\\s*=\\s*(?:\"[^\"]*\"|'[^']*'|[^\\s'\"\\]=]+))*\\s*\\]/,\n\t\tinside: {\n\t\t\t'tag': {\n\t\t\t\tpattern: /^\\[\\/?[^\\s=\\]]+/,\n\t\t\t\tinside: {\n\t\t\t\t\t'punctuation': /^\\[\\/?/\n\t\t\t\t}\n\t\t\t},\n\t\t\t'attr-value': {\n\t\t\t\tpattern: /=\\s*(?:\"[^\"]*\"|'[^']*'|[^\\s'\"\\]=]+)/,\n\t\t\t\tinside: {\n\t\t\t\t\t'punctuation': [\n\t\t\t\t\t\t/^=/,\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tpattern: /^(\\s*)[\"']|[\"']$/,\n\t\t\t\t\t\t\tlookbehind: true\n\t\t\t\t\t\t}\n\t\t\t\t\t]\n\t\t\t\t}\n\t\t\t},\n\t\t\t'punctuation': /\\]/,\n\t\t\t'attr-name': /[^\\s=\\]]+/\n\t\t}\n\t}\n};\n\nPrism.languages.shortcode = Prism.languages.bbcode;\n"],
-  "mappings": ";AAAA,MAAM,UAAU,SAAS;AAAA,EACxB,OAAO;AAAA,IACN,SAAS;AAAA,IACT,QAAQ;AAAA,MACP,OAAO;AAAA,QACN,SAAS;AAAA,QACT,QAAQ;AAAA,UACP,eAAe;AAAA,QAChB;AAAA,MACD;AAAA,MACA,cAAc;AAAA,QACb,SAAS;AAAA,QACT,QAAQ;AAAA,UACP,eAAe;AAAA,YACd;AAAA,YACA;AAAA,cACC,SAAS;AAAA,cACT,YAAY;AAAA,YACb;AAAA,UACD;AAAA,QACD;AAAA,MACD;AAAA,MACA,eAAe;AAAA,MACf,aAAa;AAAA,IACd;AAAA,EACD;AACD;AAEA,MAAM,UAAU,YAAY,MAAM,UAAU;",
-  "names": []
-}

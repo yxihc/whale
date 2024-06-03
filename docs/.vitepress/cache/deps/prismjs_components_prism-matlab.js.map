@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-matlab.js"],
-  "sourcesContent": ["Prism.languages.matlab = {\n\t'comment': [\n\t\t/%\\{[\\s\\S]*?\\}%/,\n\t\t/%.+/\n\t],\n\t'string': {\n\t\tpattern: /\\B'(?:''|[^'\\r\\n])*'/,\n\t\tgreedy: true\n\t},\n\t// FIXME We could handle imaginary numbers as a whole\n\t'number': /(?:\\b\\d+(?:\\.\\d*)?|\\B\\.\\d+)(?:[eE][+-]?\\d+)?(?:[ij])?|\\b[ij]\\b/,\n\t'keyword': /\\b(?:NaN|break|case|catch|continue|else|elseif|end|for|function|if|inf|otherwise|parfor|pause|pi|return|switch|try|while)\\b/,\n\t'function': /\\b(?!\\d)\\w+(?=\\s*\\()/,\n\t'operator': /\\.?[*^\\/\\\\']|[+\\-:@]|[<>=~]=?|&&?|\\|\\|?/,\n\t'punctuation': /\\.{3}|[.,;\\[\\](){}!]/\n};\n"],
-  "mappings": ";AAAA,MAAM,UAAU,SAAS;AAAA,EACxB,WAAW;AAAA,IACV;AAAA,IACA;AAAA,EACD;AAAA,EACA,UAAU;AAAA,IACT,SAAS;AAAA,IACT,QAAQ;AAAA,EACT;AAAA;AAAA,EAEA,UAAU;AAAA,EACV,WAAW;AAAA,EACX,YAAY;AAAA,EACZ,YAAY;AAAA,EACZ,eAAe;AAChB;",
-  "names": []
-}

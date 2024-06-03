@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-warpscript.js"],
-  "sourcesContent": ["Prism.languages.warpscript = {\n\t'comment': /#.*|\\/\\/.*|\\/\\*[\\s\\S]*?\\*\\//,\n\t'string': {\n\t\tpattern: /\"(?:[^\"\\\\\\r\\n]|\\\\.)*\"|'(?:[^'\\\\\\r\\n]|\\\\.)*'|<'(?:[^\\\\']|'(?!>)|\\\\.)*'>/,\n\t\tgreedy: true\n\t},\n\t'variable': /\\$\\S+/,\n\t'macro': {\n\t\tpattern: /@\\S+/,\n\t\talias: 'property'\n\t},\n\t// WarpScript doesn't have any keywords, these are all functions under the control category\n\t// https://www.warp10.io/tags/control\n\t'keyword': /\\b(?:BREAK|CHECKMACRO|CONTINUE|CUDF|DEFINED|DEFINEDMACRO|EVAL|FAIL|FOR|FOREACH|FORSTEP|IFT|IFTE|MSGFAIL|NRETURN|RETHROW|RETURN|SWITCH|TRY|UDF|UNTIL|WHILE)\\b/,\n\t'number': /[+-]?\\b(?:NaN|Infinity|\\d+(?:\\.\\d*)?(?:[Ee][+-]?\\d+)?|0x[\\da-fA-F]+|0b[01]+)\\b/,\n\t'boolean': /\\b(?:F|T|false|true)\\b/,\n\t'punctuation': /<%|%>|[{}[\\]()]/,\n\t// Some operators from the \"operators\" category\n\t// https://www.warp10.io/tags/operators\n\t'operator': /==|&&?|\\|\\|?|\\*\\*?|>>>?|<<|[<>!~]=?|[-/%^]|\\+!?|\\b(?:AND|NOT|OR)\\b/\n};\n"],
-  "mappings": ";AAAA,MAAM,UAAU,aAAa;AAAA,EAC5B,WAAW;AAAA,EACX,UAAU;AAAA,IACT,SAAS;AAAA,IACT,QAAQ;AAAA,EACT;AAAA,EACA,YAAY;AAAA,EACZ,SAAS;AAAA,IACR,SAAS;AAAA,IACT,OAAO;AAAA,EACR;AAAA;AAAA;AAAA,EAGA,WAAW;AAAA,EACX,UAAU;AAAA,EACV,WAAW;AAAA,EACX,eAAe;AAAA;AAAA;AAAA,EAGf,YAAY;AACb;",
-  "names": []
-}

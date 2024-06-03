@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-json5.js"],
-  "sourcesContent": ["(function (Prism) {\n\n\tvar string = /(\"|')(?:\\\\(?:\\r\\n?|\\n|.)|(?!\\1)[^\\\\\\r\\n])*\\1/;\n\n\tPrism.languages.json5 = Prism.languages.extend('json', {\n\t\t'property': [\n\t\t\t{\n\t\t\t\tpattern: RegExp(string.source + '(?=\\\\s*:)'),\n\t\t\t\tgreedy: true\n\t\t\t},\n\t\t\t{\n\t\t\t\tpattern: /(?!\\s)[_$a-zA-Z\\xA0-\\uFFFF](?:(?!\\s)[$\\w\\xA0-\\uFFFF])*(?=\\s*:)/,\n\t\t\t\talias: 'unquoted'\n\t\t\t}\n\t\t],\n\t\t'string': {\n\t\t\tpattern: string,\n\t\t\tgreedy: true\n\t\t},\n\t\t'number': /[+-]?\\b(?:NaN|Infinity|0x[a-fA-F\\d]+)\\b|[+-]?(?:\\b\\d+(?:\\.\\d*)?|\\B\\.\\d+)(?:[eE][+-]?\\d+\\b)?/\n\t});\n\n}(Prism));\n"],
-  "mappings": ";CAAC,SAAUA,QAAO;AAEjB,MAAI,SAAS;AAEb,EAAAA,OAAM,UAAU,QAAQA,OAAM,UAAU,OAAO,QAAQ;AAAA,IACtD,YAAY;AAAA,MACX;AAAA,QACC,SAAS,OAAO,OAAO,SAAS,WAAW;AAAA,QAC3C,QAAQ;AAAA,MACT;AAAA,MACA;AAAA,QACC,SAAS;AAAA,QACT,OAAO;AAAA,MACR;AAAA,IACD;AAAA,IACA,UAAU;AAAA,MACT,SAAS;AAAA,MACT,QAAQ;AAAA,IACT;AAAA,IACA,UAAU;AAAA,EACX,CAAC;AAEF,GAAE,KAAK;",
-  "names": ["Prism"]
-}

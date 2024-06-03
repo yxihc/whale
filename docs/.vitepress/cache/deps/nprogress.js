@@ -1,10 +1,10 @@
 import {
   __commonJS
-} from "./chunk-LQ2VYIYD.js";
+} from "./chunk-Y2F7D3TJ.js";
 
-// ../node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress/nprogress.js
+// node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress/nprogress.js
 var require_nprogress = __commonJS({
-  "../node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress/nprogress.js"(exports, module) {
+  "node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress/nprogress.js"(exports, module) {
     (function(root, factory) {
       if (typeof define === "function" && define.amd) {
         define(factory);

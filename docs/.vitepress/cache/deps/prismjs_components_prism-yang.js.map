@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-yang.js"],
-  "sourcesContent": ["Prism.languages.yang = {\n\t// https://tools.ietf.org/html/rfc6020#page-34\n\t// http://www.yang-central.org/twiki/bin/view/Main/YangExamples\n\t'comment': /\\/\\*[\\s\\S]*?\\*\\/|\\/\\/.*/,\n\t'string': {\n\t\tpattern: /\"(?:[^\\\\\"]|\\\\.)*\"|'[^']*'/,\n\t\tgreedy: true\n\t},\n\t'keyword': {\n\t\tpattern: /(^|[{};\\r\\n][ \\t]*)[a-z_][\\w.-]*/i,\n\t\tlookbehind: true\n\t},\n\t'namespace': {\n\t\tpattern: /(\\s)[a-z_][\\w.-]*(?=:)/i,\n\t\tlookbehind: true\n\t},\n\t'boolean': /\\b(?:false|true)\\b/,\n\t'operator': /\\+/,\n\t'punctuation': /[{};:]/\n};\n"],
-  "mappings": ";AAAA,MAAM,UAAU,OAAO;AAAA;AAAA;AAAA,EAGtB,WAAW;AAAA,EACX,UAAU;AAAA,IACT,SAAS;AAAA,IACT,QAAQ;AAAA,EACT;AAAA,EACA,WAAW;AAAA,IACV,SAAS;AAAA,IACT,YAAY;AAAA,EACb;AAAA,EACA,aAAa;AAAA,IACZ,SAAS;AAAA,IACT,YAAY;AAAA,EACb;AAAA,EACA,WAAW;AAAA,EACX,YAAY;AAAA,EACZ,eAAe;AAChB;",
-  "names": []
-}

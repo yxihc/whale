@@ -1,1 +1,3 @@
-<demo path="component/button/test.vue"></demo>
+
+# dsd
+<preview path="./../../examples/component/button/test.vue"></preview>

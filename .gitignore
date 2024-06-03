@@ -20,3 +20,5 @@ tmp
 
 pnpm-lock.yaml
 yarn.lock
+
+docs/.vitepress/cache

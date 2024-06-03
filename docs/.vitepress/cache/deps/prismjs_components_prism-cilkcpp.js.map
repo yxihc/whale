@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-cilkcpp.js"],
-  "sourcesContent": ["Prism.languages.cilkcpp = Prism.languages.insertBefore('cpp', 'function', {\n\t'parallel-keyword': {\n\t\tpattern: /\\bcilk_(?:for|reducer|s(?:cope|pawn|ync))\\b/,\n\t\talias: 'keyword'\n\t}\n});\n\nPrism.languages['cilk-cpp'] = Prism.languages['cilkcpp'];\nPrism.languages['cilk'] = Prism.languages['cilkcpp'];\n"],
-  "mappings": ";AAAA,MAAM,UAAU,UAAU,MAAM,UAAU,aAAa,OAAO,YAAY;AAAA,EACzE,oBAAoB;AAAA,IACnB,SAAS;AAAA,IACT,OAAO;AAAA,EACR;AACD,CAAC;AAED,MAAM,UAAU,UAAU,IAAI,MAAM,UAAU,SAAS;AACvD,MAAM,UAAU,MAAM,IAAI,MAAM,UAAU,SAAS;",
-  "names": []
-}

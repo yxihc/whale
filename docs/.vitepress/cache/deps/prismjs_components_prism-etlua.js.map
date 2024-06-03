@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-etlua.js"],
-  "sourcesContent": ["(function (Prism) {\n\n\tPrism.languages.etlua = {\n\t\t'delimiter': {\n\t\t\tpattern: /^<%[-=]?|-?%>$/,\n\t\t\talias: 'punctuation'\n\t\t},\n\t\t'language-lua': {\n\t\t\tpattern: /[\\s\\S]+/,\n\t\t\tinside: Prism.languages.lua\n\t\t}\n\t};\n\n\tPrism.hooks.add('before-tokenize', function (env) {\n\t\tvar pattern = /<%[\\s\\S]+?%>/g;\n\t\tPrism.languages['markup-templating'].buildPlaceholders(env, 'etlua', pattern);\n\t});\n\n\tPrism.hooks.add('after-tokenize', function (env) {\n\t\tPrism.languages['markup-templating'].tokenizePlaceholders(env, 'etlua');\n\t});\n\n}(Prism));\n"],
-  "mappings": ";CAAC,SAAUA,QAAO;AAEjB,EAAAA,OAAM,UAAU,QAAQ;AAAA,IACvB,aAAa;AAAA,MACZ,SAAS;AAAA,MACT,OAAO;AAAA,IACR;AAAA,IACA,gBAAgB;AAAA,MACf,SAAS;AAAA,MACT,QAAQA,OAAM,UAAU;AAAA,IACzB;AAAA,EACD;AAEA,EAAAA,OAAM,MAAM,IAAI,mBAAmB,SAAU,KAAK;AACjD,QAAI,UAAU;AACd,IAAAA,OAAM,UAAU,mBAAmB,EAAE,kBAAkB,KAAK,SAAS,OAAO;AAAA,EAC7E,CAAC;AAED,EAAAA,OAAM,MAAM,IAAI,kBAAkB,SAAU,KAAK;AAChD,IAAAA,OAAM,UAAU,mBAAmB,EAAE,qBAAqB,KAAK,OAAO;AAAA,EACvE,CAAC;AAEF,GAAE,KAAK;",
-  "names": ["Prism"]
-}

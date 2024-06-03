@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { nav } from './config/nav'
 import { sidebar } from './config/sidebar'
-
+import { containerPreview, componentPreview } from '@vitepress-demo-preview/plugin'
 const ogDescription = '一个快速开发的组件库'
 const ogImage = 'https://www.yxihc.com'
 const ogTitle = 'Whale'
@@ -12,7 +12,20 @@ export default defineConfig({
   title: `${ogTitle}`,
   base: '/whale/',
   description: ogDescription,
-  lastUpdated: true,
+  lastUpdated:true,
+  markdown: {
+    // @vitepress-demo-preview的配置
+    // theme: {
+    //   light: 'vitesse-light',
+    //   dark: 'vitesse-dark'
+    // },
+    // lineNumbers: true,
+    config(md) {
+      // 支持区块内的方式展示 demo 和示例代码
+      md.use(containerPreview)
+      md.use(componentPreview)
+    }
+  },
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.png' }],
     ['meta', { property: 'og:type', content: 'website' }],
@@ -20,24 +33,25 @@ export default defineConfig({
     ['meta', { property: 'og:image', content: ogImage }],
     ['meta', { property: 'og:url', content: ogUrl }],
     ['meta', { property: 'og:description', content: ogDescription }],
-    ['meta', { name: 'theme-color', content: '#646cff' }],
+    ['meta', { name: 'theme-color', content: '#646cff' }]
   ],
-  logo: '/logo-with-shadow.png',
+  logo: '/logo.png',
   themeConfig: {
+    logo: '/logo.png',
     nav,
     sidebar,
     footer: {
       message: `🐳Whale🐳 (${commitRef})`,
-      copyright: 'Copyright © 2022-2024',
+      copyright: 'Copyright © 2022-2024'
     },
     editLink: {
       pattern: 'https://github.com/yxihc/whale/main/docs/:path',
-      text: '在 Github 上编辑此页',
+      text: '在 Github 上编辑此页'
     },
     socialLinks: [
       // { icon: 'twitter', link: 'https://twitter.com/vite_js' },
       { icon: 'discord', link: 'https://www.yxihc.com' },
-      { icon: 'github', link: 'https://github.com/yxihc/whale' },
-    ],
+      { icon: 'github', link: 'https://github.com/yxihc/whale' }
+    ]
   }
 })

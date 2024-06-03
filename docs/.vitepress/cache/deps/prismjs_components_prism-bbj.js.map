@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-bbj.js"],
-  "sourcesContent": ["(function (Prism) {\n\tPrism.languages.bbj = {\n\t\t'comment': {\n\t\t\tpattern: /(^|[^\\\\:])rem\\s+.*/i,\n\t\t\tlookbehind: true,\n\t\t\tgreedy: true\n\t\t},\n\t\t'string': {\n\t\t\tpattern: /(['\"])(?:(?!\\1|\\\\).|\\\\.)*\\1/,\n\t\t\tgreedy: true\n\t\t},\n\t\t'number': /(?:\\b\\d+(?:\\.\\d*)?|\\B\\.\\d+)(?:E[+-]?\\d+)?/i,\n\t\t'keyword': /\\b(?:abstract|all|argc|begin|bye|callback|case|chn|class|classend|ctl|day|declare|delete|dim|dom|dread|dsz|else|end|endif|err|exitto|extends|fi|field|for|from|gosub|goto|if|implements|interface|interfaceend|iol|iolist|let|list|load|method|methodend|methodret|on|opts|pfx|print|private|process_events|protected|psz|public|read|read_resource|release|remove_callback|repeat|restore|return|rev|seterr|setesc|sqlchn|sqlunt|ssn|start|static|swend|switch|sys|then|tim|unt|until|use|void|wend|where|while)\\b/i,\n\t\t'function': /\\b\\w+(?=\\()/,\n\t\t'boolean': /\\b(?:BBjAPI\\.TRUE|BBjAPI\\.FALSE)\\b/i,\n\t\t'operator': /<[=>]?|>=?|[+\\-*\\/^=&]|\\b(?:and|not|or|xor)\\b/i,\n\t\t'punctuation': /[.,;:()]/\n\t};\n}(Prism));\n"],
-  "mappings": ";CAAC,SAAUA,QAAO;AACjB,EAAAA,OAAM,UAAU,MAAM;AAAA,IACrB,WAAW;AAAA,MACV,SAAS;AAAA,MACT,YAAY;AAAA,MACZ,QAAQ;AAAA,IACT;AAAA,IACA,UAAU;AAAA,MACT,SAAS;AAAA,MACT,QAAQ;AAAA,IACT;AAAA,IACA,UAAU;AAAA,IACV,WAAW;AAAA,IACX,YAAY;AAAA,IACZ,WAAW;AAAA,IACX,YAAY;AAAA,IACZ,eAAe;AAAA,EAChB;AACD,GAAE,KAAK;",
-  "names": ["Prism"]
-}

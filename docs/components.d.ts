@@ -6,16 +6,12 @@ import '@vue/runtime-core'
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     IRiCodeLine: typeof import('~icons/ri/code-line')['default']
-    IRiFileCopyLine: typeof import('~icons/ri/file-copy-line')['default']
-    IRiFlaskLine: typeof import('~icons/ri/flask-line')['default']
-    IRiGithubLine: typeof import('~icons/ri/github-line')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    VpDemo: typeof import('./.vitepress/vitepress/components/vp-demo.vue')['default']
-    VpDemo1: typeof import('./.vitepress/vitepress/components/vp-demo1.vue')['default']
-    VpExample: typeof import('./.vitepress/vitepress/components/demo/vp-example.vue')['default']
-    VpSourceCode: typeof import('./.vitepress/vitepress/components/demo/vp-source-code.vue')['default']
-    WhaleTeam: typeof import('./.vitepress/vitepress/components/WhaleTeam.vue')['default']
+    VpDemo: typeof import('.vitepress/theme/components/vp-demo.vue')['default']
+    VpExample: typeof import('.vitepress/theme/components/demo/vp-example.vue')['default']
+    VpSourceCode: typeof import('.vitepress/theme/components/demo/vp-source-code.vue')['default']
+    WhaleTeam: typeof import('.vitepress/theme/components/WhaleTeam.vue')['default']
   }
 }
 

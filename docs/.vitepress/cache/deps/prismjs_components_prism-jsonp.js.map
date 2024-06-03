@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-jsonp.js"],
-  "sourcesContent": ["Prism.languages.jsonp = Prism.languages.extend('json', {\n\t'punctuation': /[{}[\\]();,.]/\n});\n\nPrism.languages.insertBefore('jsonp', 'punctuation', {\n\t'function': /(?!\\s)[_$a-zA-Z\\xA0-\\uFFFF](?:(?!\\s)[$\\w\\xA0-\\uFFFF])*(?=\\s*\\()/\n});\n"],
-  "mappings": ";AAAA,MAAM,UAAU,QAAQ,MAAM,UAAU,OAAO,QAAQ;AAAA,EACtD,eAAe;AAChB,CAAC;AAED,MAAM,UAAU,aAAa,SAAS,eAAe;AAAA,EACpD,YAAY;AACb,CAAC;",
-  "names": []
-}

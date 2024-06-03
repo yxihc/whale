@@ -6,3 +6,6 @@ CHANGELOG.en-US.md
 docs/components.d.ts
 coverage
 ssr-testing/cases/*
+
+
+docs/.vitepress/cache/*

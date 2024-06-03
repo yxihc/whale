@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-openqasm.js"],
-  "sourcesContent": ["// https://qiskit.github.io/openqasm/grammar/index.html\n\nPrism.languages.openqasm = {\n\t'comment': /\\/\\*[\\s\\S]*?\\*\\/|\\/\\/.*/,\n\t'string': {\n\t\tpattern: /\"[^\"\\r\\n\\t]*\"|'[^'\\r\\n\\t]*'/,\n\t\tgreedy: true\n\t},\n\n\t'keyword': /\\b(?:CX|OPENQASM|U|barrier|boxas|boxto|break|const|continue|ctrl|def|defcal|defcalgrammar|delay|else|end|for|gate|gphase|if|in|include|inv|kernel|lengthof|let|measure|pow|reset|return|rotary|stretchinf|while)\\b|#pragma\\b/,\n\t'class-name': /\\b(?:angle|bit|bool|creg|fixed|float|int|length|qreg|qubit|stretch|uint)\\b/,\n\t'function': /\\b(?:cos|exp|ln|popcount|rotl|rotr|sin|sqrt|tan)\\b(?=\\s*\\()/,\n\n\t'constant': /\\b(?:euler|pi|tau)\\b|π|𝜏|ℇ/,\n\t'number': {\n\t\tpattern: /(^|[^.\\w$])(?:\\d+(?:\\.\\d*)?|\\.\\d+)(?:e[+-]?\\d+)?(?:dt|ns|us|µs|ms|s)?/i,\n\t\tlookbehind: true\n\t},\n\t'operator': /->|>>=?|<<=?|&&|\\|\\||\\+\\+|--|[!=<>&|~^+\\-*/%]=?|@/,\n\t'punctuation': /[(){}\\[\\];,:.]/\n};\n\nPrism.languages.qasm = Prism.languages.openqasm;\n"],
-  "mappings": ";AAEA,MAAM,UAAU,WAAW;AAAA,EAC1B,WAAW;AAAA,EACX,UAAU;AAAA,IACT,SAAS;AAAA,IACT,QAAQ;AAAA,EACT;AAAA,EAEA,WAAW;AAAA,EACX,cAAc;AAAA,EACd,YAAY;AAAA,EAEZ,YAAY;AAAA,EACZ,UAAU;AAAA,IACT,SAAS;AAAA,IACT,YAAY;AAAA,EACb;AAAA,EACA,YAAY;AAAA,EACZ,eAAe;AAChB;AAEA,MAAM,UAAU,OAAO,MAAM,UAAU;",
-  "names": []
-}

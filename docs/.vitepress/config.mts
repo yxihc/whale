@@ -10,7 +10,6 @@ const ogUrl = 'https://www.yxihc.com'
 const commitRef = process.env.COMMIT_REF?.slice(0, 8) || 'dev'
 export default defineConfig({
   title: `${ogTitle}`,
-  base: '/docs/',
   description: ogDescription,
   lastUpdated: true,
   head: [

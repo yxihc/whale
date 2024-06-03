@@ -102,7 +102,7 @@ const copyCode = async () => {
 const source = ref('')
 onMounted(() => {
   /* @vite-ignore */
-  import(`../../../examples/${props.path}`).then((module) => {
+  import(`./../../../examples/${props.path}`).then((module) => {
     dynamicComponent.value = module.default
   })
   decodedDescription.value = decodeURIComponent(props.description)
@@ -118,12 +118,12 @@ async function getSourceCode() {
   if (isDev) {
     source.value = (
       await import(
-        /* @vite-ignore */ `../../../examples/${props.path}?raw`
+        /* @vite-ignore */ `./../../../examples/${props.path}?raw`
         )
     ).default
   } else {
     source.value = await fetch(
-      `../../../examples/${props.path}`
+      `./../../../examples/${props.path}`
     ).then((res) => res.text())
   }
 }

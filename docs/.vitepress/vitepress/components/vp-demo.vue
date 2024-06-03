@@ -98,15 +98,35 @@ const copyCode = async () => {
     })
   }
 }
-
 const source = ref('')
 onMounted(() => {
   /* @vite-ignore */
-  import(`./../../../examples/${props.path}`).then((module) => {
-    dynamicComponent.value = module.default
+  const allDemos = import.meta.glob('../../../examples/**/*.vue', {})
+  console.log(allDemos)
+  const demos = {}
+  const path = `../../../examples/${props.path}`
+  Object.keys(allDemos).forEach((key) => {
+    // demos[key.replace('../../../examples/', '').replace('.vue', '')] =
+    //   allDemos[key].default
+    // allDemos[key]().then(res=>{
+    //   console.log(res)
+    // })
+    if (path === key) {
+      console.log('niu')
+      allDemos[key]().then(module => {
+        console.log(6)
+        console.log(module)
+        dynamicComponent.value = module.default
+      })
+    }
   })
+
+
+  // import(`../../../examples/${props.path}`).then((module) => {
+  //   dynamicComponent.value = module.default
+  // })
   decodedDescription.value = decodeURIComponent(props.description)
-  getSourceCode()
+  // getSourceCode()
 })
 
 
@@ -118,12 +138,12 @@ async function getSourceCode() {
   if (isDev) {
     source.value = (
       await import(
-        /* @vite-ignore */ `./../../../examples/${props.path}?raw`
+        /* @vite-ignore */ `../../../examples/${props.path}?raw`
         )
     ).default
   } else {
     source.value = await fetch(
-      `./../../../examples/${props.path}`
+      `../../../examples/${props.path}`
     ).then((res) => res.text())
   }
 }

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-actionscript.js"],
+  "sourcesContent": ["Prism.languages.actionscript = Prism.languages.extend('javascript', {\n\t'keyword': /\\b(?:as|break|case|catch|class|const|default|delete|do|dynamic|each|else|extends|final|finally|for|function|get|if|implements|import|in|include|instanceof|interface|internal|is|namespace|native|new|null|override|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|use|var|void|while|with)\\b/,\n\t'operator': /\\+\\+|--|(?:[+\\-*\\/%^]|&&?|\\|\\|?|<<?|>>?>?|[!=]=?)=?|[~?@]/\n});\nPrism.languages.actionscript['class-name'].alias = 'function';\n\n// doesn't work with AS because AS is too complex\ndelete Prism.languages.actionscript['parameter'];\ndelete Prism.languages.actionscript['literal-property'];\n\nif (Prism.languages.markup) {\n\tPrism.languages.insertBefore('actionscript', 'string', {\n\t\t'xml': {\n\t\t\tpattern: /(^|[^.])<\\/?\\w+(?:\\s+[^\\s>\\/=]+=(\"|')(?:\\\\[\\s\\S]|(?!\\2)[^\\\\])*\\2)*\\s*\\/?>/,\n\t\t\tlookbehind: true,\n\t\t\tinside: Prism.languages.markup\n\t\t}\n\t});\n}\n"],
+  "mappings": ";AAAA,MAAM,UAAU,eAAe,MAAM,UAAU,OAAO,cAAc;AAAA,EACnE,WAAW;AAAA,EACX,YAAY;AACb,CAAC;AACD,MAAM,UAAU,aAAa,YAAY,EAAE,QAAQ;AAGnD,OAAO,MAAM,UAAU,aAAa,WAAW;AAC/C,OAAO,MAAM,UAAU,aAAa,kBAAkB;AAEtD,IAAI,MAAM,UAAU,QAAQ;AAC3B,QAAM,UAAU,aAAa,gBAAgB,UAAU;AAAA,IACtD,OAAO;AAAA,MACN,SAAS;AAAA,MACT,YAAY;AAAA,MACZ,QAAQ,MAAM,UAAU;AAAA,IACzB;AAAA,EACD,CAAC;AACF;",
+  "names": []
+}

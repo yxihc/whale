@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-ignore.js"],
+  "sourcesContent": ["(function (Prism) {\n\tPrism.languages.ignore = {\n\t\t// https://git-scm.com/docs/gitignore\n\t\t'comment': /^#.*/m,\n\t\t'entry': {\n\t\t\tpattern: /\\S(?:.*(?:(?:\\\\ )|\\S))?/,\n\t\t\talias: 'string',\n\t\t\tinside: {\n\t\t\t\t'operator': /^!|\\*\\*?|\\?/,\n\t\t\t\t'regex': {\n\t\t\t\t\tpattern: /(^|[^\\\\])\\[[^\\[\\]]*\\]/,\n\t\t\t\t\tlookbehind: true\n\t\t\t\t},\n\t\t\t\t'punctuation': /\\//\n\t\t\t}\n\t\t}\n\t};\n\n\tPrism.languages.gitignore = Prism.languages.ignore;\n\tPrism.languages.hgignore = Prism.languages.ignore;\n\tPrism.languages.npmignore = Prism.languages.ignore;\n\n}(Prism));\n"],
+  "mappings": ";CAAC,SAAUA,QAAO;AACjB,EAAAA,OAAM,UAAU,SAAS;AAAA;AAAA,IAExB,WAAW;AAAA,IACX,SAAS;AAAA,MACR,SAAS;AAAA,MACT,OAAO;AAAA,MACP,QAAQ;AAAA,QACP,YAAY;AAAA,QACZ,SAAS;AAAA,UACR,SAAS;AAAA,UACT,YAAY;AAAA,QACb;AAAA,QACA,eAAe;AAAA,MAChB;AAAA,IACD;AAAA,EACD;AAEA,EAAAA,OAAM,UAAU,YAAYA,OAAM,UAAU;AAC5C,EAAAA,OAAM,UAAU,WAAWA,OAAM,UAAU;AAC3C,EAAAA,OAAM,UAAU,YAAYA,OAAM,UAAU;AAE7C,GAAE,KAAK;",
+  "names": ["Prism"]
+}

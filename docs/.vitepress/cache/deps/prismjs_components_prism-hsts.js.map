@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-hsts.js"],
+  "sourcesContent": ["/**\n * Original by Scott Helme.\n *\n * Reference: https://scotthelme.co.uk/hsts-cheat-sheet/\n */\n\nPrism.languages.hsts = {\n\t'directive': {\n\t\tpattern: /\\b(?:includeSubDomains|max-age|preload)(?=[\\s;=]|$)/i,\n\t\talias: 'property'\n\t},\n\t'operator': /=/,\n\t'punctuation': /;/\n};\n"],
+  "mappings": ";AAMA,MAAM,UAAU,OAAO;AAAA,EACtB,aAAa;AAAA,IACZ,SAAS;AAAA,IACT,OAAO;AAAA,EACR;AAAA,EACA,YAAY;AAAA,EACZ,eAAe;AAChB;",
+  "names": []
+}

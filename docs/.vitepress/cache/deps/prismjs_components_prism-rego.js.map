@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-rego.js"],
+  "sourcesContent": ["// https://www.openpolicyagent.org/docs/latest/policy-reference/\n\nPrism.languages.rego = {\n\t'comment': /#.*/,\n\t'property': {\n\t\tpattern: /(^|[^\\\\.])(?:\"(?:\\\\.|[^\\\\\"\\r\\n])*\"|`[^`]*`|\\b[a-z_]\\w*\\b)(?=\\s*:(?!=))/i,\n\t\tlookbehind: true,\n\t\tgreedy: true\n\t},\n\t'string': {\n\t\tpattern: /(^|[^\\\\])\"(?:\\\\.|[^\\\\\"\\r\\n])*\"|`[^`]*`/,\n\t\tlookbehind: true,\n\t\tgreedy: true\n\t},\n\n\t'keyword': /\\b(?:as|default|else|import|not|null|package|set(?=\\s*\\()|some|with)\\b/,\n\t'boolean': /\\b(?:false|true)\\b/,\n\n\t'function': {\n\t\tpattern: /\\b[a-z_]\\w*\\b(?:\\s*\\.\\s*\\b[a-z_]\\w*\\b)*(?=\\s*\\()/i,\n\t\tinside: {\n\t\t\t'namespace': /\\b\\w+\\b(?=\\s*\\.)/,\n\t\t\t'punctuation': /\\./\n\t\t}\n\t},\n\n\t'number': /-?\\b\\d+(?:\\.\\d+)?(?:e[+-]?\\d+)?\\b/i,\n\t'operator': /[-+*/%|&]|[<>:=]=?|!=|\\b_\\b/,\n\t'punctuation': /[,;.\\[\\]{}()]/\n};\n"],
+  "mappings": ";AAEA,MAAM,UAAU,OAAO;AAAA,EACtB,WAAW;AAAA,EACX,YAAY;AAAA,IACX,SAAS;AAAA,IACT,YAAY;AAAA,IACZ,QAAQ;AAAA,EACT;AAAA,EACA,UAAU;AAAA,IACT,SAAS;AAAA,IACT,YAAY;AAAA,IACZ,QAAQ;AAAA,EACT;AAAA,EAEA,WAAW;AAAA,EACX,WAAW;AAAA,EAEX,YAAY;AAAA,IACX,SAAS;AAAA,IACT,QAAQ;AAAA,MACP,aAAa;AAAA,MACb,eAAe;AAAA,IAChB;AAAA,EACD;AAAA,EAEA,UAAU;AAAA,EACV,YAAY;AAAA,EACZ,eAAe;AAChB;",
+  "names": []
+}

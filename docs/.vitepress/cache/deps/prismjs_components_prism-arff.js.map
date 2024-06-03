@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-arff.js"],
+  "sourcesContent": ["Prism.languages.arff = {\n\t'comment': /%.*/,\n\t'string': {\n\t\tpattern: /([\"'])(?:\\\\.|(?!\\1)[^\\\\\\r\\n])*\\1/,\n\t\tgreedy: true\n\t},\n\t'keyword': /@(?:attribute|data|end|relation)\\b/i,\n\t'number': /\\b\\d+(?:\\.\\d+)?\\b/,\n\t'punctuation': /[{},]/\n};\n"],
+  "mappings": ";AAAA,MAAM,UAAU,OAAO;AAAA,EACtB,WAAW;AAAA,EACX,UAAU;AAAA,IACT,SAAS;AAAA,IACT,QAAQ;AAAA,EACT;AAAA,EACA,WAAW;AAAA,EACX,UAAU;AAAA,EACV,eAAe;AAChB;",
+  "names": []
+}

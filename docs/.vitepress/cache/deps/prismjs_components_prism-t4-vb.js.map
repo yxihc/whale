@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-t4-vb.js"],
+  "sourcesContent": ["Prism.languages['t4-vb'] = Prism.languages['t4-templating'].createT4('vbnet');\n"],
+  "mappings": ";AAAA,MAAM,UAAU,OAAO,IAAI,MAAM,UAAU,eAAe,EAAE,SAAS,OAAO;",
+  "names": []
+}

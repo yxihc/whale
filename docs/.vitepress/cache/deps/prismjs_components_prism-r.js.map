@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-r.js"],
+  "sourcesContent": ["Prism.languages.r = {\n\t'comment': /#.*/,\n\t'string': {\n\t\tpattern: /(['\"])(?:\\\\.|(?!\\1)[^\\\\\\r\\n])*\\1/,\n\t\tgreedy: true\n\t},\n\t'percent-operator': {\n\t\t// Includes user-defined operators\n\t\t// and %%, %*%, %/%, %in%, %o%, %x%\n\t\tpattern: /%[^%\\s]*%/,\n\t\talias: 'operator'\n\t},\n\t'boolean': /\\b(?:FALSE|TRUE)\\b/,\n\t'ellipsis': /\\.\\.(?:\\.|\\d+)/,\n\t'number': [\n\t\t/\\b(?:Inf|NaN)\\b/,\n\t\t/(?:\\b0x[\\dA-Fa-f]+(?:\\.\\d*)?|\\b\\d+(?:\\.\\d*)?|\\B\\.\\d+)(?:[EePp][+-]?\\d+)?[iL]?/\n\t],\n\t'keyword': /\\b(?:NA|NA_character_|NA_complex_|NA_integer_|NA_real_|NULL|break|else|for|function|if|in|next|repeat|while)\\b/,\n\t'operator': /->?>?|<(?:=|<?-)?|[>=!]=?|::?|&&?|\\|\\|?|[+*\\/^$@~]/,\n\t'punctuation': /[(){}\\[\\],;]/\n};\n"],
+  "mappings": ";AAAA,MAAM,UAAU,IAAI;AAAA,EACnB,WAAW;AAAA,EACX,UAAU;AAAA,IACT,SAAS;AAAA,IACT,QAAQ;AAAA,EACT;AAAA,EACA,oBAAoB;AAAA;AAAA;AAAA,IAGnB,SAAS;AAAA,IACT,OAAO;AAAA,EACR;AAAA,EACA,WAAW;AAAA,EACX,YAAY;AAAA,EACZ,UAAU;AAAA,IACT;AAAA,IACA;AAAA,EACD;AAAA,EACA,WAAW;AAAA,EACX,YAAY;AAAA,EACZ,eAAe;AAChB;",
+  "names": []
+}

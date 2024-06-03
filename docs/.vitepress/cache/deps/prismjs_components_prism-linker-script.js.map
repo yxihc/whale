@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-linker-script.js"],
+  "sourcesContent": ["Prism.languages['linker-script'] = {\n\t'comment': {\n\t\tpattern: /(^|\\s)\\/\\*[\\s\\S]*?(?:$|\\*\\/)/,\n\t\tlookbehind: true,\n\t\tgreedy: true\n\t},\n\t'identifier': {\n\t\tpattern: /\"[^\"\\r\\n]*\"/,\n\t\tgreedy: true\n\t},\n\n\t'location-counter': {\n\t\tpattern: /\\B\\.\\B/,\n\t\talias: 'important'\n\t},\n\n\t'section': {\n\t\tpattern: /(^|[^\\w*])\\.\\w+\\b/,\n\t\tlookbehind: true,\n\t\talias: 'keyword'\n\t},\n\t'function': /\\b[A-Z][A-Z_]*(?=\\s*\\()/,\n\n\t'number': /\\b(?:0[xX][a-fA-F0-9]+|\\d+)[KM]?\\b/,\n\n\t'operator': />>=?|<<=?|->|\\+\\+|--|&&|\\|\\||::|[?:~]|[-+*/%&|^!=<>]=?/,\n\t'punctuation': /[(){},;]/\n};\n\nPrism.languages['ld'] = Prism.languages['linker-script'];\n"],
+  "mappings": ";AAAA,MAAM,UAAU,eAAe,IAAI;AAAA,EAClC,WAAW;AAAA,IACV,SAAS;AAAA,IACT,YAAY;AAAA,IACZ,QAAQ;AAAA,EACT;AAAA,EACA,cAAc;AAAA,IACb,SAAS;AAAA,IACT,QAAQ;AAAA,EACT;AAAA,EAEA,oBAAoB;AAAA,IACnB,SAAS;AAAA,IACT,OAAO;AAAA,EACR;AAAA,EAEA,WAAW;AAAA,IACV,SAAS;AAAA,IACT,YAAY;AAAA,IACZ,OAAO;AAAA,EACR;AAAA,EACA,YAAY;AAAA,EAEZ,UAAU;AAAA,EAEV,YAAY;AAAA,EACZ,eAAe;AAChB;AAEA,MAAM,UAAU,IAAI,IAAI,MAAM,UAAU,eAAe;",
+  "names": []
+}

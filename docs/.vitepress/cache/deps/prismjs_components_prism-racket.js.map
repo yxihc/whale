@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-racket.js"],
+  "sourcesContent": ["Prism.languages.racket = Prism.languages.extend('scheme', {\n\t'lambda-parameter': {\n\t\t// the racket lambda syntax is a lot more complex, so we won't even attempt to capture it.\n\t\t// this will just prevent false positives of the `function` pattern\n\t\tpattern: /([(\\[]lambda\\s+[(\\[])[^()\\[\\]'\\s]+/,\n\t\tlookbehind: true\n\t}\n});\n\nPrism.languages.insertBefore('racket', 'string', {\n\t'lang': {\n\t\tpattern: /^#lang.+/m,\n\t\tgreedy: true,\n\t\talias: 'keyword'\n\t}\n});\n\nPrism.languages.rkt = Prism.languages.racket;\n"],
+  "mappings": ";AAAA,MAAM,UAAU,SAAS,MAAM,UAAU,OAAO,UAAU;AAAA,EACzD,oBAAoB;AAAA;AAAA;AAAA,IAGnB,SAAS;AAAA,IACT,YAAY;AAAA,EACb;AACD,CAAC;AAED,MAAM,UAAU,aAAa,UAAU,UAAU;AAAA,EAChD,QAAQ;AAAA,IACP,SAAS;AAAA,IACT,QAAQ;AAAA,IACR,OAAO;AAAA,EACR;AACD,CAAC;AAED,MAAM,UAAU,MAAM,MAAM,UAAU;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-birb.js"],
+  "sourcesContent": ["Prism.languages.birb = Prism.languages.extend('clike', {\n\t'string': {\n\t\tpattern: /r?(\"|')(?:\\\\.|(?!\\1)[^\\\\])*\\1/,\n\t\tgreedy: true\n\t},\n\t'class-name': [\n\t\t/\\b[A-Z](?:[\\d_]*[a-zA-Z]\\w*)?\\b/,\n\n\t\t// matches variable and function return types (parameters as well).\n\t\t/\\b(?:[A-Z]\\w*|(?!(?:var|void)\\b)[a-z]\\w*)(?=\\s+\\w+\\s*[;,=()])/\n\t],\n\t'keyword': /\\b(?:assert|break|case|class|const|default|else|enum|final|follows|for|grab|if|nest|new|next|noSeeb|return|static|switch|throw|var|void|while)\\b/,\n\t'operator': /\\+\\+|--|&&|\\|\\||<<=?|>>=?|~(?:\\/=?)?|[+\\-*\\/%&^|=!<>]=?|\\?|:/,\n\t'variable': /\\b[a-z_]\\w*\\b/,\n});\n\nPrism.languages.insertBefore('birb', 'function', {\n\t'metadata': {\n\t\tpattern: /<\\w+>/,\n\t\tgreedy: true,\n\t\talias: 'symbol'\n\t}\n});\n"],
+  "mappings": ";AAAA,MAAM,UAAU,OAAO,MAAM,UAAU,OAAO,SAAS;AAAA,EACtD,UAAU;AAAA,IACT,SAAS;AAAA,IACT,QAAQ;AAAA,EACT;AAAA,EACA,cAAc;AAAA,IACb;AAAA;AAAA,IAGA;AAAA,EACD;AAAA,EACA,WAAW;AAAA,EACX,YAAY;AAAA,EACZ,YAAY;AACb,CAAC;AAED,MAAM,UAAU,aAAa,QAAQ,YAAY;AAAA,EAChD,YAAY;AAAA,IACX,SAAS;AAAA,IACT,QAAQ;AAAA,IACR,OAAO;AAAA,EACR;AACD,CAAC;",
+  "names": []
+}

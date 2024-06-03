@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-tap.js"],
+  "sourcesContent": ["// https://en.wikipedia.org/wiki/Test_Anything_Protocol\n\nPrism.languages.tap = {\n\t'fail': /not ok[^#{\\n\\r]*/,\n\t'pass': /ok[^#{\\n\\r]*/,\n\t'pragma': /pragma [+-][a-z]+/,\n\t'bailout': /bail out!.*/i,\n\t'version': /TAP version \\d+/i,\n\t'plan': /\\b\\d+\\.\\.\\d+(?: +#.*)?/,\n\t'subtest': {\n\t\tpattern: /# Subtest(?:: .*)?/,\n\t\tgreedy: true\n\t},\n\t'punctuation': /[{}]/,\n\t'directive': /#.*/,\n\t'yamlish': {\n\t\tpattern: /(^[ \\t]*)---[\\s\\S]*?[\\r\\n][ \\t]*\\.\\.\\.$/m,\n\t\tlookbehind: true,\n\t\tinside: Prism.languages.yaml,\n\t\talias: 'language-yaml'\n\t}\n};\n"],
+  "mappings": ";AAEA,MAAM,UAAU,MAAM;AAAA,EACrB,QAAQ;AAAA,EACR,QAAQ;AAAA,EACR,UAAU;AAAA,EACV,WAAW;AAAA,EACX,WAAW;AAAA,EACX,QAAQ;AAAA,EACR,WAAW;AAAA,IACV,SAAS;AAAA,IACT,QAAQ;AAAA,EACT;AAAA,EACA,eAAe;AAAA,EACf,aAAa;AAAA,EACb,WAAW;AAAA,IACV,SAAS;AAAA,IACT,YAAY;AAAA,IACZ,QAAQ,MAAM,UAAU;AAAA,IACxB,OAAO;AAAA,EACR;AACD;",
+  "names": []
+}

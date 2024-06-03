@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-bnf.js"],
+  "sourcesContent": ["Prism.languages.bnf = {\n\t'string': {\n\t\tpattern: /\"[^\\r\\n\"]*\"|'[^\\r\\n']*'/\n\t},\n\t'definition': {\n\t\tpattern: /<[^<>\\r\\n\\t]+>(?=\\s*::=)/,\n\t\talias: ['rule', 'keyword'],\n\t\tinside: {\n\t\t\t'punctuation': /^<|>$/\n\t\t}\n\t},\n\t'rule': {\n\t\tpattern: /<[^<>\\r\\n\\t]+>/,\n\t\tinside: {\n\t\t\t'punctuation': /^<|>$/\n\t\t}\n\t},\n\t'operator': /::=|[|()[\\]{}*+?]|\\.{3}/\n};\n\nPrism.languages.rbnf = Prism.languages.bnf;\n"],
+  "mappings": ";AAAA,MAAM,UAAU,MAAM;AAAA,EACrB,UAAU;AAAA,IACT,SAAS;AAAA,EACV;AAAA,EACA,cAAc;AAAA,IACb,SAAS;AAAA,IACT,OAAO,CAAC,QAAQ,SAAS;AAAA,IACzB,QAAQ;AAAA,MACP,eAAe;AAAA,IAChB;AAAA,EACD;AAAA,EACA,QAAQ;AAAA,IACP,SAAS;AAAA,IACT,QAAQ;AAAA,MACP,eAAe;AAAA,IAChB;AAAA,EACD;AAAA,EACA,YAAY;AACb;AAEA,MAAM,UAAU,OAAO,MAAM,UAAU;",
+  "names": []
+}

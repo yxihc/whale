@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-agda.js"],
+  "sourcesContent": ["(function (Prism) {\n\n\tPrism.languages.agda = {\n\t\t'comment': /\\{-[\\s\\S]*?(?:-\\}|$)|--.*/,\n\t\t'string': {\n\t\t\tpattern: /\"(?:\\\\(?:\\r\\n|[\\s\\S])|[^\\\\\\r\\n\"])*\"/,\n\t\t\tgreedy: true,\n\t\t},\n\t\t'punctuation': /[(){}⦃⦄.;@]/,\n\t\t'class-name': {\n\t\t\tpattern: /((?:data|record) +)\\S+/,\n\t\t\tlookbehind: true,\n\t\t},\n\t\t'function': {\n\t\t\tpattern: /(^[ \\t]*)(?!\\s)[^:\\r\\n]+(?=:)/m,\n\t\t\tlookbehind: true,\n\t\t},\n\t\t'operator': {\n\t\t\tpattern: /(^\\s*|\\s)(?:[=|:∀→λ\\\\?_]|->)(?=\\s)/,\n\t\t\tlookbehind: true,\n\t\t},\n\t\t'keyword': /\\b(?:Set|abstract|constructor|data|eta-equality|field|forall|hiding|import|in|inductive|infix|infixl|infixr|instance|let|macro|module|mutual|no-eta-equality|open|overlap|pattern|postulate|primitive|private|public|quote|quoteContext|quoteGoal|quoteTerm|record|renaming|rewrite|syntax|tactic|unquote|unquoteDecl|unquoteDef|using|variable|where|with)\\b/,\n\t};\n}(Prism));\n"],
+  "mappings": ";CAAC,SAAUA,QAAO;AAEjB,EAAAA,OAAM,UAAU,OAAO;AAAA,IACtB,WAAW;AAAA,IACX,UAAU;AAAA,MACT,SAAS;AAAA,MACT,QAAQ;AAAA,IACT;AAAA,IACA,eAAe;AAAA,IACf,cAAc;AAAA,MACb,SAAS;AAAA,MACT,YAAY;AAAA,IACb;AAAA,IACA,YAAY;AAAA,MACX,SAAS;AAAA,MACT,YAAY;AAAA,IACb;AAAA,IACA,YAAY;AAAA,MACX,SAAS;AAAA,MACT,YAAY;AAAA,IACb;AAAA,IACA,WAAW;AAAA,EACZ;AACD,GAAE,KAAK;",
+  "names": ["Prism"]
+}

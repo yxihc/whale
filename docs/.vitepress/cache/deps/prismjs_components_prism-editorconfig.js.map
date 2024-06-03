@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-editorconfig.js"],
+  "sourcesContent": ["Prism.languages.editorconfig = {\n\t// https://editorconfig-specification.readthedocs.io\n\t'comment': /[;#].*/,\n\t'section': {\n\t\tpattern: /(^[ \\t]*)\\[.+\\]/m,\n\t\tlookbehind: true,\n\t\talias: 'selector',\n\t\tinside: {\n\t\t\t'regex': /\\\\\\\\[\\[\\]{},!?.*]/, // Escape special characters with '\\\\'\n\t\t\t'operator': /[!?]|\\.\\.|\\*{1,2}/,\n\t\t\t'punctuation': /[\\[\\]{},]/\n\t\t}\n\t},\n\t'key': {\n\t\tpattern: /(^[ \\t]*)[^\\s=]+(?=[ \\t]*=)/m,\n\t\tlookbehind: true,\n\t\talias: 'attr-name'\n\t},\n\t'value': {\n\t\tpattern: /=.*/,\n\t\talias: 'attr-value',\n\t\tinside: {\n\t\t\t'punctuation': /^=/\n\t\t}\n\t}\n};\n"],
+  "mappings": ";AAAA,MAAM,UAAU,eAAe;AAAA;AAAA,EAE9B,WAAW;AAAA,EACX,WAAW;AAAA,IACV,SAAS;AAAA,IACT,YAAY;AAAA,IACZ,OAAO;AAAA,IACP,QAAQ;AAAA,MACP,SAAS;AAAA;AAAA,MACT,YAAY;AAAA,MACZ,eAAe;AAAA,IAChB;AAAA,EACD;AAAA,EACA,OAAO;AAAA,IACN,SAAS;AAAA,IACT,YAAY;AAAA,IACZ,OAAO;AAAA,EACR;AAAA,EACA,SAAS;AAAA,IACR,SAAS;AAAA,IACT,OAAO;AAAA,IACP,QAAQ;AAAA,MACP,eAAe;AAAA,IAChB;AAAA,EACD;AACD;",
+  "names": []
+}

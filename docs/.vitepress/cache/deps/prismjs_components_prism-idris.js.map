@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-idris.js"],
+  "sourcesContent": ["Prism.languages.idris = Prism.languages.extend('haskell', {\n\t'comment': {\n\t\tpattern: /(?:(?:--|\\|\\|\\|).*$|\\{-[\\s\\S]*?-\\})/m,\n\t},\n\t'keyword': /\\b(?:Type|case|class|codata|constructor|corecord|data|do|dsl|else|export|if|implementation|implicit|import|impossible|in|infix|infixl|infixr|instance|interface|let|module|mutual|namespace|of|parameters|partial|postulate|private|proof|public|quoteGoal|record|rewrite|syntax|then|total|using|where|with)\\b/,\n\t'builtin': undefined\n});\n\nPrism.languages.insertBefore('idris', 'keyword', {\n\t'import-statement': {\n\t\tpattern: /(^\\s*import\\s+)(?:[A-Z][\\w']*)(?:\\.[A-Z][\\w']*)*/m,\n\t\tlookbehind: true,\n\t\tinside: {\n\t\t\t'punctuation': /\\./\n\t\t}\n\t}\n});\n\nPrism.languages.idr = Prism.languages.idris;\n"],
+  "mappings": ";AAAA,MAAM,UAAU,QAAQ,MAAM,UAAU,OAAO,WAAW;AAAA,EACzD,WAAW;AAAA,IACV,SAAS;AAAA,EACV;AAAA,EACA,WAAW;AAAA,EACX,WAAW;AACZ,CAAC;AAED,MAAM,UAAU,aAAa,SAAS,WAAW;AAAA,EAChD,oBAAoB;AAAA,IACnB,SAAS;AAAA,IACT,YAAY;AAAA,IACZ,QAAQ;AAAA,MACP,eAAe;AAAA,IAChB;AAAA,EACD;AACD,CAAC;AAED,MAAM,UAAU,MAAM,MAAM,UAAU;",
+  "names": []
+}

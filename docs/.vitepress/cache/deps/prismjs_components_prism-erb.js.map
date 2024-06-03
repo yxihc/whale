@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-erb.js"],
+  "sourcesContent": ["(function (Prism) {\n\n\tPrism.languages.erb = {\n\t\t'delimiter': {\n\t\t\tpattern: /^(\\s*)<%=?|%>(?=\\s*$)/,\n\t\t\tlookbehind: true,\n\t\t\talias: 'punctuation'\n\t\t},\n\t\t'ruby': {\n\t\t\tpattern: /\\s*\\S[\\s\\S]*/,\n\t\t\talias: 'language-ruby',\n\t\t\tinside: Prism.languages.ruby\n\t\t}\n\t};\n\n\tPrism.hooks.add('before-tokenize', function (env) {\n\t\tvar erbPattern = /<%=?(?:[^\\r\\n]|[\\r\\n](?!=begin)|[\\r\\n]=begin\\s(?:[^\\r\\n]|[\\r\\n](?!=end))*[\\r\\n]=end)+?%>/g;\n\t\tPrism.languages['markup-templating'].buildPlaceholders(env, 'erb', erbPattern);\n\t});\n\n\tPrism.hooks.add('after-tokenize', function (env) {\n\t\tPrism.languages['markup-templating'].tokenizePlaceholders(env, 'erb');\n\t});\n\n}(Prism));\n"],
+  "mappings": ";CAAC,SAAUA,QAAO;AAEjB,EAAAA,OAAM,UAAU,MAAM;AAAA,IACrB,aAAa;AAAA,MACZ,SAAS;AAAA,MACT,YAAY;AAAA,MACZ,OAAO;AAAA,IACR;AAAA,IACA,QAAQ;AAAA,MACP,SAAS;AAAA,MACT,OAAO;AAAA,MACP,QAAQA,OAAM,UAAU;AAAA,IACzB;AAAA,EACD;AAEA,EAAAA,OAAM,MAAM,IAAI,mBAAmB,SAAU,KAAK;AACjD,QAAI,aAAa;AACjB,IAAAA,OAAM,UAAU,mBAAmB,EAAE,kBAAkB,KAAK,OAAO,UAAU;AAAA,EAC9E,CAAC;AAED,EAAAA,OAAM,MAAM,IAAI,kBAAkB,SAAU,KAAK;AAChD,IAAAA,OAAM,UAAU,mBAAmB,EAAE,qBAAqB,KAAK,KAAK;AAAA,EACrE,CAAC;AAEF,GAAE,KAAK;",
+  "names": ["Prism"]
+}

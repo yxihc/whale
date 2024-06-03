@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-ada.js"],
+  "sourcesContent": ["Prism.languages.ada = {\n\t'comment': /--.*/,\n\t'string': /\"(?:\"\"|[^\"\\r\\f\\n])*\"/,\n\t'number': [\n\t\t{\n\t\t\tpattern: /\\b\\d(?:_?\\d)*#[\\dA-F](?:_?[\\dA-F])*(?:\\.[\\dA-F](?:_?[\\dA-F])*)?#(?:E[+-]?\\d(?:_?\\d)*)?/i\n\t\t},\n\t\t{\n\t\t\tpattern: /\\b\\d(?:_?\\d)*(?:\\.\\d(?:_?\\d)*)?(?:E[+-]?\\d(?:_?\\d)*)?\\b/i\n\t\t}\n\t],\n\t'attribute': {\n\t\tpattern: /\\b'\\w+/,\n\t\talias: 'attr-name'\n\t},\n\t'keyword': /\\b(?:abort|abs|abstract|accept|access|aliased|all|and|array|at|begin|body|case|constant|declare|delay|delta|digits|do|else|elsif|end|entry|exception|exit|for|function|generic|goto|if|in|interface|is|limited|loop|mod|new|not|null|of|or|others|out|overriding|package|pragma|private|procedure|protected|raise|range|record|rem|renames|requeue|return|reverse|select|separate|some|subtype|synchronized|tagged|task|terminate|then|type|until|use|when|while|with|xor)\\b/i,\n\t'boolean': /\\b(?:false|true)\\b/i,\n\t'operator': /<[=>]?|>=?|=>?|:=|\\/=?|\\*\\*?|[&+-]/,\n\t'punctuation': /\\.\\.?|[,;():]/,\n\t'char': /'.'/,\n\t'variable': /\\b[a-z](?:\\w)*\\b/i\n};\n"],
+  "mappings": ";AAAA,MAAM,UAAU,MAAM;AAAA,EACrB,WAAW;AAAA,EACX,UAAU;AAAA,EACV,UAAU;AAAA,IACT;AAAA,MACC,SAAS;AAAA,IACV;AAAA,IACA;AAAA,MACC,SAAS;AAAA,IACV;AAAA,EACD;AAAA,EACA,aAAa;AAAA,IACZ,SAAS;AAAA,IACT,OAAO;AAAA,EACR;AAAA,EACA,WAAW;AAAA,EACX,WAAW;AAAA,EACX,YAAY;AAAA,EACZ,eAAe;AAAA,EACf,QAAQ;AAAA,EACR,YAAY;AACb;",
+  "names": []
+}

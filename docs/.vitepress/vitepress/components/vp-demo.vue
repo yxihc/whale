@@ -12,9 +12,12 @@
           </ElIcon>
         </ElTooltip>
         <ElTooltip :content="locale['view-source']" :show-arrow="false">
-          <ElIcon :size="16" class="op-btn" @click="toggleSourceVisible()">
-            <Filter />
+          <ElIcon :size="16" @click="toggleSourceVisible()">
+            <i-ri-code-line />
           </ElIcon>
+          <!--          <ElIcon :size="16" class="op-btn" @click="toggleSourceVisible()">-->
+          <!--            <Filter />-->
+          <!--          </ElIcon>-->
         </ElTooltip>
       </div>
       <ElCollapseTransition>

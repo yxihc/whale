@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-brainfuck.js"],
+  "sourcesContent": ["Prism.languages.brainfuck = {\n\t'pointer': {\n\t\tpattern: /<|>/,\n\t\talias: 'keyword'\n\t},\n\t'increment': {\n\t\tpattern: /\\+/,\n\t\talias: 'inserted'\n\t},\n\t'decrement': {\n\t\tpattern: /-/,\n\t\talias: 'deleted'\n\t},\n\t'branching': {\n\t\tpattern: /\\[|\\]/,\n\t\talias: 'important'\n\t},\n\t'operator': /[.,]/,\n\t'comment': /\\S+/\n};\n"],
+  "mappings": ";AAAA,MAAM,UAAU,YAAY;AAAA,EAC3B,WAAW;AAAA,IACV,SAAS;AAAA,IACT,OAAO;AAAA,EACR;AAAA,EACA,aAAa;AAAA,IACZ,SAAS;AAAA,IACT,OAAO;AAAA,EACR;AAAA,EACA,aAAa;AAAA,IACZ,SAAS;AAAA,IACT,OAAO;AAAA,EACR;AAAA,EACA,aAAa;AAAA,IACZ,SAAS;AAAA,IACT,OAAO;AAAA,EACR;AAAA,EACA,YAAY;AAAA,EACZ,WAAW;AACZ;",
+  "names": []
+}

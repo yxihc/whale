@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-hoon.js"],
+  "sourcesContent": ["Prism.languages.hoon = {\n\t'comment': {\n\t\tpattern: /::.*/,\n\t\tgreedy: true\n\t},\n\t'string': {\n\t\tpattern: /\"(?:[^\"\\\\]|\\\\.)*\"|'(?:[^'\\\\]|\\\\.)*'/,\n\t\tgreedy: true\n\t},\n\t'constant': /%(?:\\.[ny]|[\\w-]+)/,\n\t'class-name': /@(?:[a-z0-9-]*[a-z0-9])?|\\*/i,\n\t'function': /(?:\\+[-+] {2})?(?:[a-z](?:[a-z0-9-]*[a-z0-9])?)/,\n\t'keyword': /\\.[\\^\\+\\*=\\?]|![><:\\.=\\?!]|=[>|:,\\.\\-\\^<+;/~\\*\\?]|\\?[>|:\\.\\-\\^<\\+&~=@!]|\\|[\\$_%:\\.\\-\\^~\\*=@\\?]|\\+[|\\$\\+\\*]|:[_\\-\\^\\+~\\*]|%[_:\\.\\-\\^\\+~\\*=]|\\^[|:\\.\\-\\+&~\\*=\\?]|\\$[|_%:<>\\-\\^&~@=\\?]|;[:<\\+;\\/~\\*=]|~[>|\\$_%<\\+\\/&=\\?!]|--|==/\n};\n"],
+  "mappings": ";AAAA,MAAM,UAAU,OAAO;AAAA,EACtB,WAAW;AAAA,IACV,SAAS;AAAA,IACT,QAAQ;AAAA,EACT;AAAA,EACA,UAAU;AAAA,IACT,SAAS;AAAA,IACT,QAAQ;AAAA,EACT;AAAA,EACA,YAAY;AAAA,EACZ,cAAc;AAAA,EACd,YAAY;AAAA,EACZ,WAAW;AACZ;",
+  "names": []
+}

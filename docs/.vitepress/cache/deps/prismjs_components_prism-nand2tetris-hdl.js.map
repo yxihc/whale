@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-nand2tetris-hdl.js"],
+  "sourcesContent": ["Prism.languages['nand2tetris-hdl'] = {\n\t'comment': /\\/\\/.*|\\/\\*[\\s\\S]*?(?:\\*\\/|$)/,\n\t'keyword': /\\b(?:BUILTIN|CHIP|CLOCKED|IN|OUT|PARTS)\\b/,\n\t'boolean': /\\b(?:false|true)\\b/,\n\t'function': /\\b[A-Za-z][A-Za-z0-9]*(?=\\()/,\n\t'number': /\\b\\d+\\b/,\n\t'operator': /=|\\.\\./,\n\t'punctuation': /[{}[\\];(),:]/\n};\n"],
+  "mappings": ";AAAA,MAAM,UAAU,iBAAiB,IAAI;AAAA,EACpC,WAAW;AAAA,EACX,WAAW;AAAA,EACX,WAAW;AAAA,EACX,YAAY;AAAA,EACZ,UAAU;AAAA,EACV,YAAY;AAAA,EACZ,eAAe;AAChB;",
+  "names": []
+}

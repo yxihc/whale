@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/.pnpm/prismjs@1.29.0/node_modules/prismjs/components/prism-icon.js"],
+  "sourcesContent": ["Prism.languages.icon = {\n\t'comment': /#.*/,\n\t'string': {\n\t\tpattern: /([\"'])(?:(?!\\1)[^\\\\\\r\\n_]|\\\\.|_(?!\\1)(?:\\r\\n|[\\s\\S]))*\\1/,\n\t\tgreedy: true\n\t},\n\t'number': /\\b(?:\\d+r[a-z\\d]+|\\d+(?:\\.\\d+)?(?:e[+-]?\\d+)?)\\b|\\.\\d+\\b/i,\n\t'builtin-keyword': {\n\t\tpattern: /&(?:allocated|ascii|clock|collections|cset|current|date|dateline|digits|dump|e|error(?:number|text|value)?|errout|fail|features|file|host|input|lcase|letters|level|line|main|null|output|phi|pi|pos|progname|random|regions|source|storage|subject|time|trace|ucase|version)\\b/,\n\t\talias: 'variable'\n\t},\n\t'directive': {\n\t\tpattern: /\\$\\w+/,\n\t\talias: 'builtin'\n\t},\n\t'keyword': /\\b(?:break|by|case|create|default|do|else|end|every|fail|global|if|initial|invocable|link|local|next|not|of|procedure|record|repeat|return|static|suspend|then|to|until|while)\\b/,\n\t'function': /\\b(?!\\d)\\w+(?=\\s*[({]|\\s*!\\s*\\[)/,\n\t'operator': /[+-]:(?!=)|(?:[\\/?@^%&]|\\+\\+?|--?|==?=?|~==?=?|\\*\\*?|\\|\\|\\|?|<(?:->?|<?=?)|>>?=?)(?::=)?|:(?:=:?)?|[!.\\\\|~]/,\n\t'punctuation': /[\\[\\](){},;]/\n};\n"],
+  "mappings": ";AAAA,MAAM,UAAU,OAAO;AAAA,EACtB,WAAW;AAAA,EACX,UAAU;AAAA,IACT,SAAS;AAAA,IACT,QAAQ;AAAA,EACT;AAAA,EACA,UAAU;AAAA,EACV,mBAAmB;AAAA,IAClB,SAAS;AAAA,IACT,OAAO;AAAA,EACR;AAAA,EACA,aAAa;AAAA,IACZ,SAAS;AAAA,IACT,OAAO;AAAA,EACR;AAAA,EACA,WAAW;AAAA,EACX,YAAY;AAAA,EACZ,YAAY;AAAA,EACZ,eAAe;AAChB;",
+  "names": []
+}

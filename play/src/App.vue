@@ -2,11 +2,23 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 // import WlErmForm  from "@whale/components/erm-form";
+import { onMounted, ref } from 'vue'
+import Prism from 'prismjs';
 import HelloWorld from "./components/HelloWorld.vue";
+
+const codes = ref(`
+ height: 6em;
+`)
+
+onMounted(() => {
+  Prism.highlightAll(); // 切换更新内容则重新调用这个方法
+});
 </script>
 
 <template>
   <div>
+    <pre><code class="language-js line-numbers">{{ codes }}</code></pre>
+
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>

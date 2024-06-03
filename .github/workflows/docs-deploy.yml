@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   deploy:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
   steps:
     - uses: actions/checkoutv3
     - uses: actions/setup-node@v3

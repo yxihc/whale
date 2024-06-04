@@ -1,0 +1,13 @@
+{
+  "name": "@whale/request",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "main": "index.ts",
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.6"
+  }
+}

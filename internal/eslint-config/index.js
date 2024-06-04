@@ -1,5 +1,4 @@
 const { defineConfig } = require('eslint-define-config')
-// import {defineConfig} from 'eslint-define-config'
 
 module.exports = defineConfig({
   env: {
@@ -7,6 +6,7 @@ module.exports = defineConfig({
     browser: true,
     node: true,
   },
+
   plugins: ['@typescript-eslint', 'prettier', 'unicorn'],
   extends: [
     'eslint:recommended',
@@ -263,6 +263,18 @@ module.exports = defineConfig({
     'import/no-named-as-default': 'off',
     'import/no-named-as-default-member': 'off',
     'import/named': 'off',
+    'no-restricted-imports': [
+      'error',
+      {
+        paths: [{ name: 'lodash', message: 'Use lodash-es instead.' }],
+        patterns: [
+          {
+            group: ['lodash/*'],
+            message: 'Use lodash-es instead.',
+          },
+        ],
+      },
+    ],
 
     // eslint-plugin-eslint-comments
     'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],

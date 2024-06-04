@@ -1,8 +1,4 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const xxx = ref(0)
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div>666666</div>

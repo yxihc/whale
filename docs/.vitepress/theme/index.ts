@@ -2,11 +2,7 @@ import './style.css'
 import DefaultTheme from 'vitepress/theme'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
-import {
-  AntDesignContainer,
-  ElementPlusContainer,
-  NaiveUIContainer,
-} from '@vitepress-demo-preview/component'
+import { ElementPlusContainer } from '@vitepress-demo-preview/component'
 import '@vitepress-demo-preview/component/dist/style.css'
 import WhaleTeam from './components/WhaleTeam.vue'
 import type { Theme } from 'vitepress'

@@ -27,6 +27,7 @@ export const copyFullStyle = async () => {
     path.resolve(wlOutput, 'dist/index.css')
   )
 }
+
 // 打包流程控制 1.打包样式2.打包工具方法2.打包所有组件3.打包每个组件4.生成一个组件库5.发布组件
 export default series(
   // series 串行执行命令 parallel：并行执行命令

@@ -3,7 +3,7 @@ import nodeResolve from '@rollup/plugin-node-resolve'
 import { localeRoot, wlOutput, wlRoot } from '@whale/build-utils'
 import glob from 'fast-glob'
 import { parallel } from 'gulp'
-import { camelCase, upperFirst } from 'lodash'
+import { camelCase, upperFirst } from 'lodash-es'
 import { rollup } from 'rollup'
 import {
   PKG_BRAND_NAME,

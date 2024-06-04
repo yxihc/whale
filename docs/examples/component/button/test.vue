@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineOptions()
+</script>
 
 <template>
   <div>666666</div>

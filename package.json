@@ -19,6 +19,7 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "pnpm run -C docs serve",
+    "docs:preview": "vitepress preview docss",
     "build": "pnpm run -C internal/build start",
     "clean": "pnpm run clean:dist && pnpm run -r --parallel clean",
     "clean:dist": "rimraf dist",
@@ -28,8 +29,7 @@
     "postinstall": "pnpm stub",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0 && pretty-quick --check --branch dev",
     "lint:fix": "eslint --fix . --ext .vue,.js,.ts,.jsx,.tsx,.json && pretty-quick --branch dev",
-    "build:theme": "pnpm run -C packages/theme-chalk build",
-    "docs:preview": "vitepress preview docss"
+    "build:theme": "pnpm run -C packages/theme-chalk build"
   },
   "dependencies": {
     "@vue/shared": "^3.2.37",

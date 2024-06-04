@@ -1,6 +1,6 @@
 packages:
   - packages/*
   - docs
-  - docstt
+  - examples/*
   - play
   - internal/*

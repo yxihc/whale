@@ -190,6 +190,7 @@ class WhaleRequest implements Requestor {
 export let whaleRequest: WhaleRequest
 
 export function inject(requestor: Requestor) {
+  console.log('aadsassadsdsa')
   whaleRequest = WhaleRequest.create(requestor)
 }
 

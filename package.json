@@ -12,6 +12,7 @@
     "docs"
   ],
   "scripts": {
+    "demo:request": "pnpm run  -C examples/demo-request dev",
     "demo": "pnpm run  -C demo dev",
     "demo:build:prod": "pnpm -C demo build:prod",
     "play": "pnpm run  -C play dev",

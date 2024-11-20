@@ -12,7 +12,7 @@
     "stub": "unbuild --stub"
   },
   "peerDependencies": {
-    "vue": "^3.2.25"
+    "vue": "^3.5.13"
   },
   "dependencies": {
     "@pnpm/find-workspace-packages": "^4.0.16",
@@ -37,6 +37,6 @@
     "@types/gulp": "^4.0.17",
     "@types/lodash-es": "^4.17.6",
     "unbuild": "^0.7.4",
-    "vue": "^3.2.37"
+    "vue": "^3.5.13"
   }
 }

@@ -1,20 +1,23 @@
 {
-  "name": "play",
+  "name": "@whale-request/play",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.37",
-    "prismjs": "^1.29.0",
-    "vite-plugin-prismjs": "^0.0.11"
+    "@whale/request": "workspace:*",
+    "axios": "^1.6.8",
+    "vue": "^3.5.13",
+    "whale-request": "0.0.0-dev.4"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^3.0.3",
-    "unplugin-vue-define-options": "^0.6.1",
-    "vite": "^3.0.7"
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
   }
 }

@@ -37,7 +37,8 @@
     "@whale/locale": "workspace:*",
     "@whale/theme-chalk": "workspace:*",
     "@whale/utils": "workspace:*",
-    "vue": "^3.2.37"
+    "vue": "^3.5.13",
+    "vue-router": "^4.0.16"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.18.6",
@@ -80,7 +81,7 @@
     "sass": "^1.53.0",
     "typescript": "^5.2.2",
     "unplugin-vue-define-options": "^0.6.1",
-    "vite": "^3.0.7",
+    "vite": "^5.3.5",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-vue-setup-extend": "^0.4.0",
     "vitepress": "^1.2.2"

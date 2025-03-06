@@ -1,5 +1,5 @@
-import { createApp } from 'vue'
-import './style.css'
+import { createApp } from 'vue';
+import './style.css';
 
 // 注入
 import {
@@ -8,7 +8,7 @@ import {
   setGlobalOptions,
   useLocationStorageCache,
   useSessionStorageCache,
-} from '@whale/request'
+} from '@whale/request';
 
 // import {
 //   inject,
@@ -18,16 +18,16 @@ import {
 //   useSessionStorageCache,
 // } from 'whale-request'
 
-import { httpClient } from './http/request-axios-imp'
+import { httpClient } from './http/request-axios-imp';
 
-import App from './App.vue'
+import App from './App.vue';
 
-injectCache(useSessionStorageCache(), useLocationStorageCache())
-inject(httpClient)
+injectCache(useSessionStorageCache(), useLocationStorageCache());
+inject(httpClient);
 
 setGlobalOptions({
   useCache: false,
   retry: 0,
-})
+});
 
-createApp(App).mount('#app')
+createApp(App).mount('#app');

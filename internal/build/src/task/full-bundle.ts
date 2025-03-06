@@ -1,45 +1,45 @@
-import path from 'path'
-import nodeResolve from '@rollup/plugin-node-resolve'
-import { localeRoot, wlOutput, wlRoot } from '@whale/build-utils'
-import glob from 'fast-glob'
-import { parallel } from 'gulp'
-import { camelCase, upperFirst } from 'lodash-es'
-import { rollup } from 'rollup'
+import path from 'path';
+import nodeResolve from '@rollup/plugin-node-resolve';
+import { localeRoot, wlOutput, wlRoot } from '@whale/build-utils';
+import glob from 'fast-glob';
+import { parallel } from 'gulp';
+import { camelCase, upperFirst } from 'lodash-es';
+import { rollup } from 'rollup';
 import {
   PKG_BRAND_NAME,
   PKG_CAMELCASE_LOCAL_NAME,
   PKG_CAMELCASE_NAME,
-} from '@whale/build-constants'
+} from '@whale/build-constants';
 
 //打包插件
-import DefineOptions from 'unplugin-vue-define-options/rollup'
-import vue from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
-import commonjs from '@rollup/plugin-commonjs'
-import esbuild, { minify as minifyPlugin } from 'rollup-plugin-esbuild'
-import { version } from '../../../../packages/whale/version'
+import DefineOptions from 'unplugin-vue-define-options/rollup';
+import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx';
+import commonjs from '@rollup/plugin-commonjs';
+import esbuild, { minify as minifyPlugin } from 'rollup-plugin-esbuild';
+import { version } from '../../../../packages/whale/version';
 import {
   formatBundleFilename,
   generateExternal,
   withTaskName,
   writeBundles,
-} from '../utils'
-import { target } from '../build-info'
-import type { Plugin } from 'rollup'
+} from '../utils';
+import { target } from '../build-info';
+import type { Plugin } from 'rollup';
 
-const banner = `/*! ${PKG_BRAND_NAME} v${version} */\n`
+const banner = `/*! ${PKG_BRAND_NAME} v${version} */\n`;
 
 async function buildFullLocale(minify: boolean) {
   const files = await glob(`${path.resolve(localeRoot, 'lang')}/*.ts`, {
     absolute: true,
-  })
+  });
 
   return Promise.all(
     files.map(async (file) => {
       //获取到文件名
-      const filename = path.basename(file, '.ts')
+      const filename = path.basename(file, '.ts');
       // 改为开头大写
-      const name = upperFirst(camelCase(filename))
+      const name = upperFirst(camelCase(filename));
 
       const bundle = await rollup({
         input: file,
@@ -50,7 +50,7 @@ async function buildFullLocale(minify: boolean) {
             target,
           }),
         ],
-      })
+      });
       await writeBundles(bundle, [
         {
           format: 'umd',
@@ -74,9 +74,9 @@ async function buildFullLocale(minify: boolean) {
           sourcemap: minify,
           banner,
         },
-      ])
+      ]);
     })
-  )
+  );
 }
 
 async function buildFullEntry(minify: boolean) {
@@ -101,7 +101,7 @@ async function buildFullEntry(minify: boolean) {
       treeShaking: true,
       legalComments: 'eof',
     }),
-  ]
+  ];
 
   if (minify) {
     //代码压缩
@@ -110,7 +110,7 @@ async function buildFullEntry(minify: boolean) {
         target,
         sourceMap: true,
       })
-    )
+    );
   }
   const bundle = await rollup({
     input: path.resolve(wlRoot, 'index.ts'),
@@ -118,7 +118,7 @@ async function buildFullEntry(minify: boolean) {
     external: await generateExternal({ full: true }),
     // 是否应用tree-shaking。建议您省略此选项（默认为treeshake：true），除非您发现由tree-shaking算法引起的bug，在这种情况下，请使用“treeshake：false”，一旦您提交了问题！
     treeshake: false,
-  })
+  });
 
   await writeBundles(bundle, [
     {
@@ -146,13 +146,13 @@ async function buildFullEntry(minify: boolean) {
       sourcemap: minify,
       banner,
     },
-  ])
+  ]);
 }
 
 export const buildFull = (minify: boolean) => async () =>
-  Promise.all([buildFullEntry(minify), buildFullLocale(minify)])
+  Promise.all([buildFullEntry(minify), buildFullLocale(minify)]);
 
 export const buildFullBundle = parallel(
   withTaskName('buildFullMinified', buildFull(true)),
   withTaskName('buildFull', buildFull(false))
-)
+);

@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../../../../../../packages/upload-sdk/index.ts"],"sourcesContent":["import { aaa } from './src/te/test';\n\nexport function xx() {\n  console.log('ss');\n  aaa();\n}\n"],"names":["aaa"],"mappings":";;;;;;AACO,SAAS,EAAE,GAAG;AACrB,EAAE,OAAO,CAAC,GAAG,CAAC,IAAI,CAAC,CAAC;AACpB,EAAEA,QAAG,EAAE,CAAC;AACR;;;;"}

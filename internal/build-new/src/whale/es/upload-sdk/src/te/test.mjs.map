@@ -1,0 +1,1 @@
+{"version":3,"file":"test.mjs","sources":["../../../../../../../../packages/upload-sdk/src/te/test.ts"],"sourcesContent":["export function aaa() {\n  console.log('aaa');\n}\n"],"names":[],"mappings":"AAAO,SAAS,GAAG,GAAG;AACtB,EAAE,OAAO,CAAC,GAAG,CAAC,KAAK,CAAC,CAAC;AACrB;;;;"}

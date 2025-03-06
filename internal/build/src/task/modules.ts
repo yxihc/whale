@@ -1,16 +1,16 @@
 // 查找文件
-import glob from 'fast-glob'
+import glob from 'fast-glob';
 //packages 项目路径
-import { excludeFiles, pkgRoot, wlRoot } from '@whale/build-utils'
-import DefineOptions from 'unplugin-vue-define-options/rollup'
-import vue from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
-import { rollup } from 'rollup'
-import commonjs from '@rollup/plugin-commonjs'
-import esbuild from 'rollup-plugin-esbuild'
-import { generateExternal, writeBundles } from '../utils'
-import { buildConfigEntries, target } from '../build-info'
-import type { OutputOptions } from 'rollup'
+import { excludeFiles, pkgRoot, wlRoot } from '@whale/build-utils';
+import DefineOptions from 'unplugin-vue-define-options/rollup';
+import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx';
+import { rollup } from 'rollup';
+import commonjs from '@rollup/plugin-commonjs';
+import esbuild from 'rollup-plugin-esbuild';
+import { generateExternal, writeBundles } from '../utils';
+import { buildConfigEntries, target } from '../build-info';
+import type { OutputOptions } from 'rollup';
 
 // 异步打包packages函数
 export const buildModules = async () => {
@@ -21,7 +21,7 @@ export const buildModules = async () => {
       absolute: true,
       onlyFiles: true,
     })
-  )
+  );
 
   const bundle = await rollup({
     //需要打包的文件
@@ -45,7 +45,7 @@ export const buildModules = async () => {
     treeshake: false,
     // 使用rollup打包，比如我们在自己的库中需要使用第三方库，例如jquery等，又不想在最终生成的打包文件中出现jquery。这个时候我们就需要使用external属性。
     external: await generateExternal({ full: false }),
-  })
+  });
 
   const outputOptions = buildConfigEntries.map(([module, config]) => {
     return {
@@ -63,7 +63,7 @@ export const buildModules = async () => {
       preserveModulesRoot: wlRoot,
       sourcemap: true,
       entryFileNames: `[name].${config.ext}`,
-    }
-  }) as OutputOptions[]
-  await writeBundles(bundle, outputOptions)
-}
+    };
+  }) as OutputOptions[];
+  await writeBundles(bundle, outputOptions);
+};

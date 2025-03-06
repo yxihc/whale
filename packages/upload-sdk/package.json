@@ -1,0 +1,24 @@
+{
+  "name": "@whale/upload-sdk",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "main": "index.ts",
+  "scripts": {
+    "build": "rollup -c ./rollup.config.ts --configPlugin @rollup/plugin-typescript"
+  },
+  "dependencies": {
+    "@rollup/plugin-typescript": "^12.1.2",
+    "rollup": "4.22.4",
+    "spark-md5": "^3.0.2",
+    "typescript": "^5.2.2",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/rollup": "^0.54.0",
+    "@types/spark-md5": "^3.0.5",
+    "fast-glob": "^3.2.11",
+    "rollup-plugin-esbuild": "^4.9.1",
+    "ts-node": "^10.9.2"
+  }
+}

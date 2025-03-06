@@ -1,29 +1,31 @@
-import path from 'path'
-import { wlOutput } from '@whale/build-utils'
-import { PKG_NAME } from '@whale/build-constants'
+import path from 'path';
+import { wlOutput } from '@whale/build-utils';
+import { PKG_NAME } from '@whale/build-constants';
 
-import type { ModuleFormat } from 'rollup'
-export const target = 'es2018'
+import type { ModuleFormat } from 'rollup';
 
-export const modules = ['esm', 'cjs'] as const
-export type Module = typeof modules[number]
+export const target = 'es2018';
+
+export const modules = ['esm', 'cjs'] as const;
+export type Module = typeof modules[number];
 
 export interface BuildInfo {
-  module: 'ESNext' | 'CommonJS'
-  format: ModuleFormat
-  ext: 'mjs' | 'cjs' | 'js'
+  module: 'ESNext' | 'CommonJS';
+  format: ModuleFormat;
+  ext: 'mjs' | 'cjs' | 'js';
   output: {
     /** e.g: `es` */
-    name: string
+    name: string;
     /** e.g: `dist/whale/es` */
-    path: string
-  }
+    path: string;
+  };
 
   bundle: {
     /** e.g: `ewhale/es` */
-    path: string
-  }
+    path: string;
+  };
 }
+
 export const buildConfig: Record<Module, BuildInfo> = {
   esm: {
     module: 'ESNext',
@@ -49,9 +51,9 @@ export const buildConfig: Record<Module, BuildInfo> = {
       path: `${PKG_NAME}/lib`,
     },
   },
-}
-export type BuildConfigEntries = [Module, BuildInfo][]
+};
+export type BuildConfigEntries = [Module, BuildInfo][];
 
 export const buildConfigEntries = Object.entries(
   buildConfig
-) as BuildConfigEntries
+) as BuildConfigEntries;

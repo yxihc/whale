@@ -1,24 +1,24 @@
-import { getPackageDependencies, wlPackage } from '@whale/build-utils'
-
-import type { OutputOptions, RollupBuild } from 'rollup'
+import { getPackageDependencies } from './pkg';
+import { wlPackage } from './paths';
+import type { OutputOptions, RollupBuild } from 'rollup';
 
 export const generateExternal = async (options: { full: boolean }) => {
-  const { dependencies, peerDependencies } = getPackageDependencies(wlPackage)
+  const { dependencies, peerDependencies } = getPackageDependencies(wlPackage);
 
   return (id: string) => {
-    const packages: string[] = peerDependencies
+    const packages: string[] = [...peerDependencies];
     if (!options.full) {
-      packages.push('@vue', ...dependencies)
+      packages.push('@vue', ...dependencies);
     }
 
     return [...new Set(packages)].some(
       (pkg) => id === pkg || id.startsWith(`${pkg}/`)
-    )
-  }
-}
+    );
+  };
+};
 
 export function writeBundles(bundle: RollupBuild, options: OutputOptions[]) {
-  return Promise.all(options.map((option) => bundle.write(option)))
+  return Promise.all(options.map((option) => bundle.write(option)));
 }
 
 export function formatBundleFilename(
@@ -26,5 +26,5 @@ export function formatBundleFilename(
   minify: boolean,
   ext: string
 ) {
-  return `${name}${minify ? '.min' : ''}.${ext}`
+  return `${name}${minify ? '.min' : ''}.${ext}`;
 }

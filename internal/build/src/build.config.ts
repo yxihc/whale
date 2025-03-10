@@ -1,4 +1,4 @@
-import { wlOutput, wlRoot } from './utils/paths.ts';
+import { buildOutput, wlRoot } from './utils/paths';
 import type { OutputOptions } from 'rollup';
 
 export const PKG_PREFIX = '@whale';
@@ -16,7 +16,7 @@ export const target = 'es2018';
 export const moduleOutputs = [
   {
     format: 'esm',
-    dir: `${wlOutput}/${PKG_NAME}/es`,
+    dir: `${buildOutput}/${PKG_NAME}/es`,
     exports: undefined,
     preserveModules: true,
     preserveModulesRoot: wlRoot,
@@ -25,7 +25,7 @@ export const moduleOutputs = [
   },
   {
     format: 'cjs',
-    dir: `${wlOutput}/${PKG_NAME}/lib`,
+    dir: `${buildOutput}/${PKG_NAME}/lib`,
     exports: 'named',
     preserveModules: true,
     preserveModulesRoot: wlRoot,

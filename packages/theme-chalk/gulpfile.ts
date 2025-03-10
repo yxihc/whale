@@ -1,16 +1,63 @@
-import path from 'path'
-import chalk from 'chalk'
-import { dest, parallel, series, src } from 'gulp'
-import gulpSass from 'gulp-sass'
-import dartSass from 'sass'
-import autoprefixer from 'gulp-autoprefixer'
-import cleanCSS from 'gulp-clean-css'
-import rename from 'gulp-rename'
-import consola from 'consola'
-import { wlOutput } from '@whale/build-utils'
+import path from 'path';
+import { Transform } from 'stream';
+import chalk from 'chalk';
+import { type TaskFunction, dest, parallel, series, src } from 'gulp';
+import gulpSass from 'gulp-sass';
+import dartSass from 'sass';
+import autoprefixer from 'gulp-autoprefixer';
+import rename from 'gulp-rename';
+import consola from 'consola';
+import postcss from 'postcss';
+import cssnano from 'cssnano';
+import { wlOutput } from '@whale/build/src/utils/paths';
 
-const distFolder = path.resolve(__dirname, 'dist')
-const distBundle = path.resolve(wlOutput, 'theme-chalk')
+const distFolder = path.resolve(__dirname, 'dist');
+const distBundle = path.resolve(wlOutput, 'theme-chalk');
+
+/**
+ * using `postcss` and `cssnano` to compress CSS
+ * @returns
+ */
+function compressWithCssnano() {
+  const processor = postcss([
+    cssnano({
+      preset: [
+        'default',
+        {
+          // avoid color transform
+          colormin: false,
+          // avoid font transform
+          minifyFontValues: false,
+        },
+      ],
+    }),
+  ]);
+  return new Transform({
+    objectMode: true,
+    transform(chunk, _encoding, callback) {
+      const file = chunk;
+      if (file.isNull()) {
+        callback(null, file);
+        return;
+      }
+      if (file.isStream()) {
+        callback(new Error('Streaming not supported'));
+        return;
+      }
+      const cssString = file.contents!.toString();
+      processor.process(cssString, { from: file.path }).then((result) => {
+        const name = path.basename(file.path);
+        file.contents = Buffer.from(result.css);
+        consola.success(
+          `${chalk.cyan(name)}: ${chalk.yellow(
+            cssString.length / 1000
+          )} KB -> ${chalk.green(result.css.length / 1000)} KB`
+        );
+        callback(null, file);
+      });
+    },
+  });
+}
 
 /**
  * compile theme-chalk scss & minify
@@ -18,28 +65,20 @@ const distBundle = path.resolve(wlOutput, 'theme-chalk')
  * @returns
  */
 function buildThemeChalk() {
-  const sass = gulpSass(dartSass)
-  const noElPrefixFile = /(index|base|display)/
+  const sass = gulpSass(dartSass);
+  const noElPrefixFile = /(index|base|display)/;
   return src(path.resolve(__dirname, 'src/*.scss'))
     .pipe(sass.sync())
     .pipe(autoprefixer({ cascade: false }))
-    .pipe(
-      cleanCSS({}, (details) => {
-        consola.success(
-          `${chalk.cyan(details.name)}: ${chalk.yellow(
-            details.stats.originalSize / 1000
-          )} KB -> ${chalk.green(details.stats.minifiedSize / 1000)} KB`
-        )
-      })
-    )
+    .pipe(compressWithCssnano())
     .pipe(
       rename((path) => {
         if (!noElPrefixFile.test(path.basename)) {
-          path.basename = `el-${path.basename}`
+          path.basename = `el-${path.basename}`;
         }
       })
     )
-    .pipe(dest(distFolder))
+    .pipe(dest(distFolder));
 }
 
 /**
@@ -47,27 +86,19 @@ function buildThemeChalk() {
  * @returns
  */
 function buildDarkCssVars() {
-  const sass = gulpSass(dartSass)
+  const sass = gulpSass(dartSass);
   return src(path.resolve(__dirname, 'src/dark/css-vars.scss'))
     .pipe(sass.sync())
     .pipe(autoprefixer({ cascade: false }))
-    .pipe(
-      cleanCSS({}, (details) => {
-        consola.success(
-          `${chalk.cyan(details.name)}: ${chalk.yellow(
-            details.stats.originalSize / 1000
-          )} KB -> ${chalk.green(details.stats.minifiedSize / 1000)} KB`
-        )
-      })
-    )
-    .pipe(dest(`${distFolder}/dark`))
+    .pipe(compressWithCssnano())
+    .pipe(dest(`${distFolder}/dark`));
 }
 
 /**
  * copy from packages/theme-chalk/dist to dist/element-plus/theme-chalk
  */
 export function copyThemeChalkBundle() {
-  return src(`${distFolder}/**`).pipe(dest(distBundle))
+  return src(`${distFolder}/**`).pipe(dest(distBundle));
 }
 
 /**
@@ -77,12 +108,12 @@ export function copyThemeChalkBundle() {
 export function copyThemeChalkSource() {
   return src(path.resolve(__dirname, 'src/**')).pipe(
     dest(path.resolve(distBundle, 'src'))
-  )
+  );
 }
 
-export const build = parallel(
+export const build: TaskFunction = parallel(
   copyThemeChalkSource,
   series(buildThemeChalk, buildDarkCssVars, copyThemeChalkBundle)
-)
+);
 
-export default build
+export default build;

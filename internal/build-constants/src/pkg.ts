@@ -1,5 +1,0 @@
-export const PKG_PREFIX = '@whale'
-export const PKG_NAME = 'whale'
-export const PKG_CAMELCASE_NAME = 'Whale'
-export const PKG_CAMELCASE_LOCAL_NAME = 'WhaleLocale'
-export const PKG_BRAND_NAME = 'Whale'

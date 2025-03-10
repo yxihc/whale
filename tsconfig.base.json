@@ -16,7 +16,8 @@
     "rootDir": ".",
     "types": [],
     "paths": {
-      "@whale/*": ["packages/*"]
+      "@whale/*": ["packages/*"],
+      "whale": ["packages/whale"]
     }
   }
 }
